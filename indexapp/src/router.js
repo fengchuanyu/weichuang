@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from './views/home/Home.vue'
 import About from './views/about/About.vue'
 import SuccessCase from './views/case/SuccessCase.vue'
 import NewsIndex from './views/news/NewsIndex.vue'
@@ -8,13 +9,18 @@ import ClassDetail from './views/class/ClassDetail.vue'
 import NewsDetail from './views/news/NewsDetail.vue'
 
 Vue.use(Router)
-
+ 
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
       path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/class',
       name: 'class',
       component: Class
     },
