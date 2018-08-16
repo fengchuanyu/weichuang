@@ -28,7 +28,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 .container{
-  width: 1400px;
+  width: 1200px;
   margin: 0 auto;
 }
 </style>
