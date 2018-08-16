@@ -2,7 +2,7 @@
   <div class="container">
     <nav>
       <ul class="clearix">
-        <li><img src="@/assets/img/logo.png" alt=""></li>
+        <li @click="routerChange({path:'/'})"><img src="@/assets/img/logo.png" alt=""></li>
         <li @click='routerChange(item)' v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
       </ul>
     </nav>
@@ -16,7 +16,7 @@ export default {
       navList:[
         {
           name:"核心课程",
-          path:'/'
+          path:'/class'
         },
         {
           name:"成功案例",
