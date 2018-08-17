@@ -52,177 +52,185 @@
                             </div>
                         </div>
                     </div>
-
             </div>
-
         </div>
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
-    data() {
-        return {
-            teachers:[],
-            companyIntroduction:"",
-            companySrc:null
-        }
-    },
-    created(){
-        this.getData();
-    },
-    methods:{
-        getData(){
-            axios.get("../data/aboutdata.json")
-                .then((res)=>{
-                    for(let i=0;i<res.data.teachers.length;i++) {
-                        res.data.teachers[i].src = require("@/assets/img/" + res.data.teachers[i].src);
+  data() {
+    return {
+      teachers: [],
+      companyIntroduction: "",
+      companySrc: null
+    };
+  },
+  created() {
+    this.getData();
+  },
+  methods: {
+    getData() {
+      axios
+        .get("../data/aboutdata.json")
+        .then(res => {
+          for (let i = 0; i < res.data.teachers.length; i++) {
+            res.data.teachers[i].src = require("@/assets/img/" +
+              res.data.teachers[i].src);
+          }
+          for (let j = 0; j < res.data.company.length; j++) {
+            res.data.company[j].src = require("@/assets/img/" +
+              res.data.company[j].src);
+          }
+          this.teachers = res.data.teachers;
+          this.companySrc = res.data.company[0].src;
+          this.companyIntroduction = res.data.company[0].introduction;
+        })
+        .catch(() => {
 
-                    }
-                    for(let j=0;j<res.data.company.length;j++) {
-                        res.data.company[j].src = require("@/assets/img/" + res.data.company[j].src);
-                    }
-                    this.teachers = res.data.teachers;
-                    this.companySrc = res.data.company[0].src;
-                    this.companyIntroduction= res.data.company[0].introduction
-                })
-                .catch((err)=>{
-                    console.log(err);
-                })
-        }
+        });
     }
-
-}
+  }
+};
 </script>
 <style scoped>
-    .container{
-        margin-top: 20px;
-        position: relative;
-        width: 1200px;
-    }
-    .company{
-        background: #fff;
-        border: 1px solid #ccc;
-        padding: 30px 30px;
-    }
+.container {
+  margin-top: 20px;
+  position: relative;
+  width: 1200px;
+}
+.company {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 30px 30px;
+}
 
-    .company .image img{
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 30px;
-        width: 100%;
-    }
-    .text{
-        padding: 0 30px;
-        display: flex;
-        justify-content: center;
-    }
-    .text p{
-        font-size: 18px;
-        font-weight: normal;
-    }
-    .container .teacher .header,.history .his-header,.connect .con-header{
-        text-align: center;
-        padding: 20px 0;
-    }
-    .container .teacher .header span,.history .his-header span,.connect .con-header span{
-        display: block;
-        margin: 10px auto;
-        width: 44px;
-        border-bottom:2px solid #4a90fc;
-    }
-    .list{
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content:space-between;
-    }
-    .list img   {
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-    .list li .cirle{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin: 25px auto 0 auto;
-        background: white;
-        overflow: hidden;
-    }
-    .list li:nth-child(4n+1) .cirle, .list li:nth-child(4n+1) span{
-        border: 1px solid #ec9170;
-    }
-    .list li:nth-child(4n+2) .cirle,.list li:nth-child(4n+2) span{
-        border: 1px solid #51a1d3;
-    }
-    .list li:nth-child(4n+3) .cirle,.list li:nth-child(4n+3) span{
-        border: 1px solid #6f71fa;
-    }
-    .list li:nth-child(4n+4) .cirle,.list li:nth-child(4n+4) span{
-        border: 1px solid #c0983d;
-    }
-    .list li span{
-        display: inline-block;
-        width:128px;
-    }
- .content .job{
-     font-weight: lighter;
-     color: #676766;
- }
-    .content .details{
-        padding: 10px;
-    }
-    .content .details .more{
-        padding-top: 30px;
-        float: right;
-        color: #529de3;
-    }
+.company .image img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.text {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+.text p {
+  font-size: 18px;
+  font-weight: normal;
+}
+.container .teacher .header,
+.history .his-header,
+.connect .con-header {
+  text-align: center;
+  padding: 20px 0;
+}
+.container .teacher .header span,
+.history .his-header span,
+.connect .con-header span {
+  display: block;
+  margin: 10px auto;
+  width: 44px;
+  border-bottom: 2px solid #4a90fc;
+}
+.list {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.list li .cirle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 25px auto 0 auto;
+  background: white;
+  overflow: hidden;
+}
+.list li:nth-child(4n + 1) .cirle,
+.list li:nth-child(4n + 1) span {
+  border: 1px solid #ec9170;
+}
+.list li:nth-child(4n + 2) .cirle,
+.list li:nth-child(4n + 2) span {
+  border: 1px solid #51a1d3;
+}
+.list li:nth-child(4n + 3) .cirle,
+.list li:nth-child(4n + 3) span {
+  border: 1px solid #6f71fa;
+}
+.list li:nth-child(4n + 4) .cirle,
+.list li:nth-child(4n + 4) span {
+  border: 1px solid #c0983d;
+}
+.list li span {
+  display: inline-block;
+  width: 128px;
+}
+.content .job {
+  font-weight: lighter;
+  color: #676766;
+}
+.content .details {
+  padding: 10px;
+}
+.content .details .more {
+  padding-top: 30px;
+  float: right;
+  color: #529de3;
+}
 
-    .content .list li{
-        width: 278px;
-        height: 400px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-        background: #fff;
-    }
-    .history .content{
-        width: 1198px;
-        height: 598px;
-        border: 1px solid #ccc;
-        background: #fff;
-    }
-   .connect{
-       margin-bottom: 50px;
-   }
-    .connect .content{
-        width: 1158px;
-        border: 1px solid #ccc;
-        padding: 20px ;
-        background: #fff;
-    }
-    .connect .content .image{
-        height: 350px;
-        background:  url("../../assets/img/map.png");
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .connect .content .curtain{
-        width: 100%;
-        height: 350px;
-        background: white;
-        opacity: 0.8;
-        margin: 0 auto;
-        position: relative;
-    }
-    .connect .content .inner{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .connect .content .inner p{
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-    }
+.content .list li {
+  width: 278px;
+  height: 400px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.history .content {
+  width: 1198px;
+  height: 598px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.connect {
+  margin-bottom: 50px;
+}
+.connect .content {
+  width: 1158px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+}
+.connect .content .image {
+  height: 350px;
+  background: url("../../assets/img/map.png");
+  margin: 0 auto;
+  padding: 20px;
+}
+.connect .content .curtain {
+  width: 100%;
+  height: 350px;
+  background: white;
+  opacity: 0.8;
+  margin: 0 auto;
+  position: relative;
+}
+.connect .content .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.connect .content .inner p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
 </style>

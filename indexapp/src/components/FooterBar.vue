@@ -34,13 +34,13 @@
         width: 1200px;
         height: 100px;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
     }
     hr{
         margin: 10px 0;
         color: black;
     }
     #permit{
-        font-size: 12px;
+        font-size: 14px;
     }
 </style>
