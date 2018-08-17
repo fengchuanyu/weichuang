@@ -20,7 +20,7 @@ export default {
 
 <style>
 body{
-  background: #f8fafc;
+  background: #fff;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

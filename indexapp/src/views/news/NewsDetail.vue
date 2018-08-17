@@ -195,7 +195,7 @@ export default {
       color: #333333;
   }
   #ndcontainer .foot span{
-      font-size: 24px;
+      font-size: 22px;
       margin-right: 30px;
       cursor:pointer;
   }
