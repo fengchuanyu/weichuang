@@ -9,7 +9,7 @@
           <li><input class="search" placeholder="请输入要搜索的内容" @keyup.enter="search"/></li>
           <li @click="login">登陆</li>
           <li>/</li>
-          <li @click="register">注册</li>cd
+          <li @click="register">注册</li>
         </div>
 
       </ul>
@@ -18,85 +18,93 @@
   </div>
 </template>
 <script>
-export default {
-  data(){
-    return{
-      navList:[
-        {
-          name:"核心课程",
-          path:'/class'
+    export default {
+        data(){
+            return{
+                navList:[
+                    {
+                        name:"核心课程",
+                        path:'/class'
+                    },
+                    {
+                        name:"成功案例",
+                        path:'/case'
+                    },
+                    {
+                        name:"新闻资讯",
+                        path:'/newsindex'
+                    },
+                    {
+                        name:"关于我们",
+                        path:'/about'
+                    }
+                ]
+            }
         },
-        {
-          name:"成功案例",
-          path:'/case'
-        },
-        {
-          name:"新闻资讯",
-          path:'/newsindex'
-        },
-        {
-          name:"关于我们",
-          path:'/about'
+        methods:{
+            routerChange(item){
+                this.$router.push(item.path);
+            },
+            login(){
+                alert("登陆")
+            },
+            register(){
+                alert("注册")
+            },
+            search(){
+                alert("搜索")
+            }
         }
-      ]
     }
-  },
-  methods:{
-    routerChange(item){
-      this.$router.push(item.path);
-    },
-      login(){
-        alert("登陆")
-      },
-      register(){
-        alert("注册")
-      },
-      search(){
-        alert("搜索")
-      }
-  }
-}
 </script>
 <style scoped>
   .container{
-    box-shadow:0px 1px 1px gray;
+    box-shadow:0px 1px 1px rgba(0,0,0,.2);
     overflow: hidden;
     width: 100%;
     height: 70px;
-
+    background: #fff;
   }
-  .li{
-    height: 70px;
-    /*vertical-align: middle;*/
+  nav{
+    width: 1200px;;
+    text-align:center;
+    margin:0 auto;
+    
   }
-nav{
-  width: 100%;
-}
-nav ul{
-  width: 1200px;
-  margin-left: 150px;
-}
-nav ul li{
-  float: left;
-  margin-left: 20px;
-  line-height: 60px;
-}
+  nav ul{
+    width: 1200px;
+  }
+  nav ul li{
+    float: left;
+    margin-left: 20px;
+    line-height: 60px;
+    font-size: 16px
+  }
 
-.clearix::after{
-  content: "";
-  clear: both;
-  display: block;
-}
+  .clearix::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  input::-webkit-input-placeholder{
+    color: #aaa
+  }
   .search{
-    border: 1px gray solid;
+    border: 1px #ddd solid;
     border-radius: 42px;
     height: 30px;
     padding-left: 10px;
     color: gray;
+    padding: 5px 30px;
   }
   input{outline:none;}
   li:hover{
     color: rgb(0, 144, 255);
     cursor: pointer;
+  }
+  ul{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
   }
 </style>
