@@ -2,8 +2,16 @@
   <div class="container">
     <nav>
       <ul class="clearix">
-        <li @click="routerChange({path:'/'})"><img src="@/assets/img/logo.png" alt=""></li>
+        <li @click="routerChange({path:'/'})"><img src="@/assets/img/logo.png" alt="" style="margin-top: 10px"></li>
         <li @click='routerChange(item)' v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
+
+        <div style="float: right">
+          <li><input class="search" placeholder="请输入要搜索的内容" @keyup.enter="search"/></li>
+          <li @click="login">登陆</li>
+          <li>/</li>
+          <li @click="register">注册</li>cd
+        </div>
+
       </ul>
     </nav>
     <footer></footer>
@@ -36,25 +44,59 @@ export default {
   methods:{
     routerChange(item){
       this.$router.push(item.path);
-    }
+    },
+      login(){
+        alert("登陆")
+      },
+      register(){
+        alert("注册")
+      },
+      search(){
+        alert("搜索")
+      }
   }
 }
 </script>
 <style scoped>
+  .container{
+    box-shadow:0px 1px 1px gray;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+
+  }
+  .li{
+    height: 70px;
+    /*vertical-align: middle;*/
+  }
 nav{
   width: 100%;
 }
 nav ul{
   width: 1200px;
-  
+  margin-left: 150px;
 }
 nav ul li{
   float: left;
   margin-left: 20px;
+  line-height: 60px;
 }
+
 .clearix::after{
   content: "";
   clear: both;
   display: block;
 }
+  .search{
+    border: 1px gray solid;
+    border-radius: 42px;
+    height: 30px;
+    padding-left: 10px;
+    color: gray;
+  }
+  input{outline:none;}
+  li:hover{
+    color: rgb(0, 144, 255);
+    cursor: pointer;
+  }
 </style>
