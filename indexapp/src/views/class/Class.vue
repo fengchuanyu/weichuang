@@ -1,66 +1,37 @@
 <template>
   <div>
-    <h1>课程</h1>
-    <class-components v-for="(items,index) in objList" :key='index+"ul"'></class-components>
+    <class-title></class-title>
+    <class-components v-for="(items,index) in objList" :key='index+"ul"' :itemProps='items'></class-components>
   </div>
 </template>
 <script>
 import classComponents from '@/components/classComponents.vue'
+import classTitle from '@/components/classTitle.vue'
 export default {
+  created(){
+     this.getData();
+  },
   data(){
     return{
-      objList:[{
-        indexObj:1,
-        avatarUrl:'',
-        teacherName:'someone',
-        teacherJob:'JAVA',
-        teacherDetail:'hello world!',
-        classType:'JAVA',
-        classIntroduce:'avatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduce'
-      },
-      {
-        indexObj:2,
-        avatarUrl:'',
-        teacherName:'someone',
-        teacherJob:'JAVA',
-        teacherDetail:'hello world!',
-        classType:'JAVA',
-        classIntroduce:'avatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduce'
-      },
-      {
-        indexObj:3,
-        avatarUrl:'',
-        teacherName:'someone',
-        teacherJob:'JAVA',
-        teacherDetail:'hello world!',
-        classType:'JAVA',
-        classIntroduce:'avatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduce'
-      },
-      {
-        indexObj:4,
-        avatarUrl:'',
-        teacherName:'someone',
-        teacherJob:'JAVA',
-        teacherDetail:'hello world!',
-        classType:'JAVA',
-        classIntroduce:'avatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduce'
-      },
-      {
-        indexObj:5,
-        avatarUrl:'',
-        teacherName:'someone',
-        teacherJob:'JAVA',
-        teacherDetail:'hello world!',
-        classType:'JAVA',
-        classIntroduce:'avatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduceavatar,teacherName,teacherJob,teacherDetail,classType,classIntroduce'
-      }]
+      objList:[]
     }
   },
   components:{
-    classComponents:classComponents
+    classComponents:classComponents,
+    classTitle:classTitle
+  },
+  methods:{
+        getData(){
+        axios.get('./data/class.json').then((res)=>{
+        this.objList = res.data.objList;
+        let i;
+        for(i=0;i<this.objList.length;i++){
+          this.objList[i].avatarUrl=require('@/assets/img/'+this.objList[i].avatarUrl)
+        }
+      })
+    }
   }
 }
 </script>
 <style scoped>
-
 </style>

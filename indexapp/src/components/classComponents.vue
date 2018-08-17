@@ -1,82 +1,86 @@
 <template>
     <div>
         <div class="container">
-            <div :class="[left,componentsColor]">
-                <div class="avatar"></div>
-                <h3 class="teacher-name">某老师</h3>
-                <span class="teacher-job">web前端工程师</span>
+            <div :class="[left,{'background-orange':itemProps.indexObj%5==1},{'background-blue':itemProps.indexObj%5==2},{'background-green':itemProps.indexObj%5==3},{'background-zi':itemProps.indexObj%5==4},{'background-darkorange':itemProps.indexObj%5==0}]">
+                <img class="avatar" :src="itemProps.avatarUrl">
+                <h3 class="teacher-name text-white">{{itemProps.teacherName}}</h3>
+                <span class="teacher-job text-white">{{itemProps.teacherJob}}</span>
                 <div class="teacher-detail-container">
-                    <span class="teacher-detail">433333333333333333 33333333333 333333333 3333 333333 333 3333333 33333333 33 3333 333 3333</span>
+                    <div class="teacher-detail text-white">{{itemProps.teacherDetail}}</div>
                 </div>
-                <div class="more">了解详情-></div>
+                <div class="more text-white" @click="toDetail">了解讲师→</div>
             </div>
              <div class="right">
-                 <h2 :class="componentsColorText">web前端</h2>
-                 <h3 :class="componentsColorText">从0开始....</h3>
+                 <h2 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">{{itemProps.classType}}</h2>
+                 <h3 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">从0开始....</h3>
                  <div class="teacher-introduce-container">
-                 <span class="teacher-introduce">433333333333333 a sa s aglsa;kf;a las;lk;a k;ask ;akas; fk;al;k;sa k;sak ;ak ;sok ;sak;ok ;ask ;ak; aksd ;sak;askfo kp;k p;ak; ksa; 333333333333333333333333333333333333333333333333333333333333333333</span>
+                 <span class="teacher-introduce">{{itemProps.classIntroduce}}</span>
                  </div>
-                <div :class="[studyNow,componentsColor]"><h4 class="study-now-text">立即学习</h4></div>
+                <div :class="[studyNow,{'background-orange':itemProps.indexObj%5==1},{'background-blue':itemProps.indexObj%5==2},{'background-green':itemProps.indexObj%5==3},{'background-zi':itemProps.indexObj%5==4},{'background-darkorange':itemProps.indexObj%5==0}]"><h4 class="study-now-text" @click="toStudyNow">立即学习</h4></div>
             </div>
         </div>
     </div>
 </template>
 <style scoped>
 .container{
-    margin-left: 78px;
-    margin-bottom: 40px;
-    width: 1000px;
+    margin-bottom: 26px;
+    width: 1200px;
     height: 333px;
-    background: rgb(238, 238, 238);
-    border-radius: 15px 15px;
+    border-radius: 25px 25px;
     overflow: hidden;
 }
 .left{
-width:222px;
+width:272px;
 height:333px;
 
 float: left;
 
 }
 .right{
-margin-left: 222px; 
-padding-left: 10px;   
-width:778px;
+margin-left: 272px; 
+padding-left: 27px;   
+width:928px;
 height:333px;
-/* background: blue; */
+background: rgb(240, 240, 240);
 }
 .avatar{
-    margin-left: 8px;
-    margin-top: 8px;
-    width: 65px;
-    height: 65px;
+    margin-left: 18px;
+    margin-top: 18px;
+    width: 82px;
+    height: 82px;
     border-radius: 50%;
     background-color: aqua;
     display: inline-block;
     float: left;
+    border: 2px solid white;
 }
 .teacher-name{
-margin-top: 12px;
-margin-left: 80px;
+margin-top: 24px;
+margin-left: 122px;
 }
 .teacher-job{
-margin-left: 8px;
-
+margin-left: 22px;
+font-size: 16px;
 }
 .teacher-detail-container{
-    margin-top: 10px;
-width:222px;
-height:223px;
+    margin-top: 35px;
+    margin-left: 27px;
+width:217px;
+height:190px;
 /* background: beige; */
 }
 .teacher-detail{
-position:relative;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 6;
+overflow: hidden;
+font-size: 16px;
 }
 .teacher-introduce{
-
+font-size: 20px;
 }
 .teacher-introduce-container{
-width:768px;
+width:968px;
 height:180px;
 
 
@@ -88,52 +92,78 @@ height:180px;
     color: orange;
 }
 .more{
-    margin-left: 150px;
+    margin-left: 164px;
+    margin-top:-17px;
+    font-size: 16px;
 }
 .study-now{
-    margin-left:650px;
-    width: 102px;
+    margin-left:754px;
+    width: 122px;
     height:35px;
-    border-radius: 20px 20px;;
+    border-radius: 20px 20px;
     text-align: center;
     line-height: 35px;
+    font-size:20px;
 }
 .study-now-text{
     color: white;
 }
 .background-blue{
-    background-color: rgb(8, 117, 219);
+    background-color: rgb(0, 144, 255);
 }
 .text-blue{
-    color: rgb(8, 117, 219);
+    color: rgb(0, 144, 255);
 }
 .background-orange{
-    background-color: orange;
+    background-color: rgb(254,174,23);
 }
 .text-orange{
-    color: orange;
+    color: rgb(254,174,23);
 }
 .background-green{
-    background-color: rgb(71, 209, 101);
+    background-color: rgb(77, 203, 119);
 }
 .text-green{
-    color: rgb(71, 209, 101);
+    color: rgb(77, 203, 119);
 }
 .background-zi{
-    background-color: rgb(136, 29, 179);
+    background-color: rgb(167, 0, 254);
 }
 .text-zi{
-    color: rgb(136, 29, 179);
+    color: rgb(167, 0, 254);
+}
+.background-darkorange{
+    background-color: rgb(255, 133, 0);
+}
+.text-darkorange{
+    color: rgb(255, 133, 0);
+}
+.text-white{
+    color: white;
 }
 </style>
 <script>
 export default {
+    props:['itemProps'],
+    // created(){console.log(this.itemProps);
+    // },
     data(){
         return{
             left:'left',
             componentsColor:'components-color',
             studyNow:'study-now',
-            componentsColorText:'components-color-text'
+            componentsColorText:'components-color-text',
+            textWhite:'text-wihte'
+        }
+    },
+    methods:{
+        toDetail(){
+            // this.$router.push('/classdetail');
+            console.log('success classdetail');
+            
+        },
+        toStudyNow(){
+            console.log('success studynow');
         }
     }
 }
