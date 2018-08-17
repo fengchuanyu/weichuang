@@ -1,7 +1,7 @@
 <template>
   <div class="big">
     <div class="head-image">
-      <img src="../../assets/img/headimg.jpg" alt="">
+      <!-- <img src="../../assets/img/headimg.jpg" alt=""> -->
       <div class="container">
           <div class="title">
             <div class="title-head">
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="second">
-      <img src="../../assets/img/centerimg.jpg" alt="">
+      <!-- <img src="../../assets/img/centerimg.jpg" alt=""> -->
       <div class="imgon">
           <ul>
             <li>
@@ -93,10 +93,11 @@
                     .then( (response) => {
                         this.classdata = response.data.ClassData;
                         console.log(this.classdata);
-                        console.log(response);
+                        
                         for(let i = 0 ; i < this.classdata.length ; i++){
                             this.classdata[i].src=require('@/assets/img/'+ this.classdata[i].src)
                         }
+                        console.log(response);
                     })
                     .catch((error) => {
                         console.log(error)
