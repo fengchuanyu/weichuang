@@ -38,7 +38,9 @@
             </div>
         </div>
         <div class="container-three" v-show="isshow">
-            <img src="../assets/img/load.gif" alt="">
+            <div @click="btnone" class="btn-two">
+                <span class="btn-one">&lt</span>
+            </div>
         </div>
     </div>
 </template>
@@ -46,22 +48,23 @@
 <script>
     import axios from 'axios'
     export default {
+        props:["msg"],
         data(){
             return{
                 dataLists:[],
                 title:["学员姓名","毕业学校","就业公司"],
                 isif:true,
                 isifs:false,
-                type:"type1",
+                type:"type2",
                 isEnd:false,
                 isfinsh:true,
                 isshow:true
             }
         },
         created(){
-            if(this.type == "type1"){
+            if(this.msg == "type1"){
                 this.getData();
-            }else if(this.type == "type2"){
+            }else if(this.msg == "type2"){
                 this.getDatas();
             }
         },
@@ -94,29 +97,20 @@
 
                 })
             },
-        },
-        mounted() {
-            window.onscroll = () => {
-                let scrollTop = document.documentElement.scrollTop;   //滚动高度
-                let scrollHeigth = document.documentElement.scrollHeight;   //可滚动高度
-                let clientHeight = document.documentElement.clientHeight;    //可视高度
-                let heigh = scrollTop - scrollHeigth + clientHeight;
-                //console.log(heigh);
-                if (heigh >= 0) {
-                    if(this.isfinsh) {
-                        if (!this.isEnd) {
-                            //this.isshow = true;
-                            this.isfinsh = false;
-                            if(this.type == "type1"){
-                                this.getData();
-                            }else if(this.type == "type2"){
-                                this.getDatas();
-                            }
+            btnone(){
+                if(this.isfinsh) {
+                    if (!this.isEnd) {
+                        //this.isshow = true;
+                        this.isfinsh = false;
+                        if(this.msg == "type1"){
+                            this.getData();
+                        }else if(this.msg == "type2"){
+                            this.getDatas();
                         }
                     }
                 }
             }
-        }
+        },
     }
 </script>
 
@@ -130,20 +124,24 @@
         display: inline-block;
     }
     .container{
-        width: 1038px;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100% ;
+        height: 580px;
         margin: auto;
-        padding: 50px 80px 20px 80px;
-        border: 1px solid #dddddd;
+        padding-left: 80px;
         position: relative;
+        overflow-y: scroll;
     }
     .head-one{
         font-weight: bolder;
-        margin-left: 160px;
+        margin-left: 100px;
         margin-bottom: 30px;
         font-size: 30px;
+        margin-left: 240px;
     }
     .head-one li{
-        margin-left: 160px;
+        margin: 0 60px 0 90px;
     }
     .head-two-one{
         color: #008ffd;
@@ -169,17 +167,32 @@
         border-left: 1px solid #dddddd;
         color: #313131;
         font-size: 22px;
-    }
-    .nav-two li{
-        padding: 0px 115px 6px 125px;
+        text-align: left;
     }
     .nav-two-one{
-        padding: 0 100px;
+        padding-left: 100px;
+    }
+    .nav-two li{
+        padding: 0px 85px 6px 145px;
     }
     .nav-two-title, .nav-two-src{
         padding: 0px 3px 10px 3px;
     }
+    .btn-one{
+        font-size: 36px;
+        color: white;
+        font-weight: bolder;
+        display: block;
+    }
+    .container-three .btn-two{
+        width: 40px;
+        height: 80px;
+        background-color: #008ffd;
+        line-height: 80px;
+        transform: rotate(90deg);
+    }
     .container-three{
-        text-align: center;
+        width: 80px;
+        margin: 0 auto;
     }
 </style>

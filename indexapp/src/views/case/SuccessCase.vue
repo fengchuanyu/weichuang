@@ -1,6 +1,11 @@
 <template>
   <div class="container">
-    <class-title></class-title>
+    <header>
+      <img src="@/assets/img/success-header.jpg"/>
+      <h1 class="header-title">唯创网讯</h1>
+      <p>省内最早最权威最专业的WEB前端培训</p>
+      <p>一站式解决零基础就业</p>
+    </header>
     <div class="excellent-student">
       <p>明星学员</p>
       <p></p>
@@ -63,21 +68,26 @@
           </li>
 
         </ul>
+        <commonone :msg = "type"></commonone>
       </div>
 
     </div>
   </div>
 </template>
 <script>
-import classTitle from '@/components/classTitle.vue'
+    import commonone from '@/components/commonOne.vue'
 export default {
     created(){
         this.getData();
     },
     data(){
         return{
-            caseData:[]
+            caseData:[],
+            type:"type1"
         }
+    },
+    components:{
+        commonone
     },
     methods:{
         getData(){
@@ -93,9 +103,6 @@ export default {
 
                 })
         }
-    },
-    components:{
-          classTitle:classTitle
     }
 }
 </script>
@@ -104,9 +111,49 @@ export default {
     margin-bottom: 20px;
 
   }
-  /* header部分的代码在'@/components/classTitle.vue' header组件在本页第三行    <class-title></class-title> 
-  可以对class-title添加class进行微调
-  */
+  /*header start*/
+  header{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-top: 10px;
+  }
+  header img{
+    position: absolute;
+    width: 100%;
+  }
+  header h1{
+    position: absolute;
+    color: #fff;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    font-size: 75px;
+  }
+  header p:first-of-type{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    font-size: 29px;
+    color: gold;
+    border-radius: 30px;
+
+    padding: 0 20px;
+    letter-spacing: 3px;
+    background: rgba(255,255,255,.5);
+  }
+  header p:last-of-type{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    font-size: 29px;
+    color: #fff;
+    letter-spacing: 5px;
+  }
+  /*header end*/
 
   .excellent-student{
     position: relative;
@@ -191,7 +238,7 @@ export default {
     overflow:hidden;
   }
   .ranking-list{
-    height: 800px;
+    /*height: 800px;*/
     border: 1px solid #cccccc;
     margin-top: 35px;
     width: 100%;

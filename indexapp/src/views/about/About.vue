@@ -34,7 +34,9 @@
             <div class="his-header">
                 <h3>发展历程</h3>
                 <span></span>
-                <div class="content"></div>
+                <div class="content">
+                    <commonone :msg = "type"></commonone>
+                </div>
             </div>
         </div>
         <div class="connect">
@@ -58,14 +60,19 @@
 </template>
 <script>
 import axios from "axios";
+import commonone from '@/components/commonOne.vue'
 export default {
   data() {
     return {
       teachers: [],
       companyIntroduction: "",
-      companySrc: null
+      companySrc: null,
+        type:"type2"
     };
   },
+    components:{
+        commonone
+    },
   created() {
     this.getData();
   },
@@ -233,4 +240,7 @@ export default {
   font-size: 18px;
   font-weight: bold;
 }
+   /* .content{
+        overflow: scroll;
+    }*/
 </style>
