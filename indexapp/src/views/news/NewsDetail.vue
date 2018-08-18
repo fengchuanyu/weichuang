@@ -13,10 +13,12 @@
           <hr style="position:absolute; left:5%; width:90%"><br>
           <div class="choose">
             <div class="left clearfix">
-              <span @click="homepage">首页</span> <span @click="goback">上一页</span>
+              <span v-if="newId==0" @click="homepage" :style="style">首页</span> <span v-if="newId==0" @click="goback" :style="style">上一页</span>
+              <span v-if="newId!=0" @click="homepage">首页</span> <span v-if="newId!=0"  @click="goback" >上一页</span>
             </div>
             <div class="right clearfix">
-               <span @click="nextpage">下一页</span>  <span @click="endpage">尾页</span>
+               <span v-if="newId!=this.dataList.length-1" @click="nextpage">下一页</span>  <span v-if="newId!=this.dataList.length-1" @click="endpage">尾页</span>
+               <span v-if="newId==this.dataList.length-1" @click="nextpage" :style="style">下一页</span>  <span v-if="newId==this.dataList.length-1" @click="nextpage" :style="style">尾页</span>
             </div>
           </div>
     </div>
@@ -28,17 +30,22 @@ export default {
        created(){
           this.getData();
        },
+       computed:{
+         style(){
+           return {color:`gray`}
+         }
+       },
        data(){
          return{
            dataList:[],
-           newId:0
+           newId:this.$route.params.id
          }
        },
        methods:{
          getData(){
            axios.get('./data/newsdata.json')
            .then((res)=>{
-               this.dataList=res.data.albums
+               this.dataList=res.data.newsData
            })
            .catch((error)=>{
              console.log(error);
@@ -46,21 +53,28 @@ export default {
          },
          homepage(){
           //  console.log("home");
-           this.newId=0
+           this.newId=0,
+           scrollTo(0,0)
          },
          goback(){
-           this.newId--
+           this.newId--,
+           scrollTo(0,0);
            if(this.newId<0){
-            //  show=false
+             this.newId=0
            }
          },
          nextpage(){
-           this.newId++
+           this.newId++,
+           scrollTo(0,0);
+           if(this.newId>this.dataList.length-1){
+             this.newId=this.dataList.length-1
+           }
          },
          endpage(){
-           this.newId=this.dataList.length-1
+           this.newId=this.dataList.length-1,
+           scrollTo(0,0)
          }
-       }
+       },
 }
 </script>
 <style scoped>
@@ -110,5 +124,8 @@ export default {
    }
    .right span{
      padding: 10px;
+   }
+   .choose span{
+     cursor: pointer;
    }
 </style>
