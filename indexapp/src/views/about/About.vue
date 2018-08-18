@@ -261,7 +261,7 @@ export default {
     top:50%;
     margin-left:-250px;
     margin-top: -125px;
-    z-index: 1;
+    z-index: 3;
 
 
 }
