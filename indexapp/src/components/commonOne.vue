@@ -132,9 +132,10 @@
         box-sizing: border-box;
         overflow: hidden;
         width: 100% ;
-        height: 580px;
+        height: 599px;
         margin: auto;
         padding-left: 80px;
+        padding-top: 30px;
         position: relative;
         overflow-y: scroll;
     }
@@ -188,16 +189,21 @@
         color: white;
         font-weight: bolder;
         display: block;
-        transform: rotate(90deg);
+        transform: rotate(270deg);
+        position: relative;
+        left: 20px;
+        width: 40px;
     }
     .btn-three{
-        line-height: 100px;
+        bottom: 10px;
     }
     .container-three .btn-two{
         width: 80px;
         height: 40px;
         background-color: #008ffd;
         line-height: 40px;
+        position: relative;
+        bottom:0px;
     }
     .container-three{
         width: 80px;
