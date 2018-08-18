@@ -1,43 +1,59 @@
 <template>
-    <div class="pictureHere">
-      <h1 class="text-white class-title">唯创网讯</h1>
-      <div class="class-content1-container">
-        <h3 class="class-content1">省内最早最权威最专业的WEB前端培训</h3>
-      </div>
-       <h3 class="text-white class-content2">一站式解决零基础就业</h3>
-    </div>
+<div>
+      <header>
+      <img src="@/assets/img/success-header.jpg"/>
+      <h1 class="header-title">唯创网讯</h1>
+      <p>省内最早最权威最专业的WEB前端培训</p>
+      <p>一站式解决零基础就业</p>
+    </header>
+</div>
 </template>
 <style scoped>
-.pictureHere{
-  width: 1200px;
-  height: 320px;
-  background: url('../assets/img/classBeiJing.jpg');
-  padding-top: 80px;
-  margin-bottom: 43px;
-  background-repeat: round;
-}
-.text-white{
-  color:white;
-}
-.class-title{
-  text-align: center;
-  letter-spacing:5px;
-}
-.class-content1-container{
-  margin: auto;
-  background: rgba(121, 157, 242, .4);
-  text-align: center;
-  width: 500px;
-  border-radius: 20px 20px;
-}
-.class-content1{
-  margin-top: 30px;
-color: yellow;
-letter-spacing:5px;
-}
-.class-content2{
-  margin-top: 30px;
-  text-align: center;
-  letter-spacing:5px;
-}
+.container{
+    margin-bottom: 20px;
+
+  }
+  /*header start*/
+  header{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-top: 10px;
+  }
+  header img{
+    position: absolute;
+    width: 100%;
+  }
+  header h1{
+    position: absolute;
+    color: #fff;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    font-size: 75px;
+  }
+  header p:first-of-type{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    font-size: 29px;
+    color: gold;
+    border-radius: 30px;
+
+    padding: 0 20px;
+    letter-spacing: 3px;
+    background: rgba(255,255,255,.5);
+  }
+  header p:last-of-type{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    font-size: 29px;
+    color: #fff;
+    letter-spacing: 5px;
+  }
+  /*header end*/
 </style>

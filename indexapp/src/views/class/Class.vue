@@ -1,11 +1,11 @@
 <template>
   <div>
-    <class-title></class-title>
+    <class-title class="title-adjust"></class-title>
     <class-components v-for="(items,index) in objList" :key='index+"ul"' :itemProps='items'></class-components>
   </div>
 </template>
 <script>
-import classComponents from '@/components/classComponents.vue'
+import classComponents from '@/components/classComponents.vue';
 import classTitle from '@/components/classTitle.vue'
 export default {
   created(){
@@ -34,4 +34,7 @@ export default {
 }
 </script>
 <style scoped>
+.title-adjust{
+  margin-bottom: 51px;
+}
 </style>
