@@ -88,9 +88,6 @@ export default {
   background: #fff;
   border:1px solid gray;
   width: 1100px;
-  /* margin-top: 30px; */
-  /* margin-left: 40px; */
-  /* padding-bottom: 40px; */
 }
 .news-content{
   border:1px solid darkgray;
@@ -131,6 +128,7 @@ ul li{
   float: left;
   margin: 0 10px;
   text-align: center;
+  height: 24px;
   line-height: 24px;
   cursor: pointer;
 }
