@@ -17,7 +17,7 @@
             </div>
             <div class="content">
                 <ul class="list">
-                    <li v-for="(items,index) in teachers" :key="index +'cl'">
+                    <li v-for="(items,index) in teachers" :key="index +'cl'" @click="gotodetial(items)">
                         <div class="cirle"><img :src="items.src" alt=""></div>
                         <h3>{{items.name}}</h3>
                         <span></span>
@@ -29,6 +29,11 @@
                     </li>
                 </ul>
             </div>
+            <div class="load-content"></div>
+            <!--<transition name="show">-->
+                <teacherdetial  v-show="isShow" class="techaer-detial" :itemProps='nowItem' @click.native="disappear">
+                </teacherdetial>
+          <!--  </transition>-->
         </div>
         <div class="history">
             <div class="his-header">
@@ -57,13 +62,19 @@
   </div>
 </template>
 <script>
+    import teacherdetial from '@/components/TeacherDetail.vue'
 import axios from "axios";
 export default {
+    components:{
+        teacherdetial,
+    },
   data() {
     return {
       teachers: [],
       companyIntroduction: "",
-      companySrc: null
+      companySrc: null,
+        isShow:false,
+        nowItem:'',
     };
   },
   created() {
@@ -89,7 +100,15 @@ export default {
         .catch(() => {
 
         });
-    }
+    },
+      gotodetial(item)
+      {
+          this.isShow = true;
+          this.nowItem=item;
+      },
+      disappear(){
+          this.isShow=false;
+      }
   }
 };
 </script>
@@ -104,7 +123,18 @@ export default {
   border: 1px solid #ccc;
   padding: 30px 30px;
 }
-
+/*.show-enter-active,.show-leave-active{
+    transition:all 2s;
+}
+.show-enter{
+   transform: scale(0.8);
+}
+.show-leave-to{
+    transform: scale(0.2);
+}
+.show-enter-to,.show-leave{
+    margin-left:0px;
+}*/
 .company .image img {
   display: block;
   margin: 0 auto;
@@ -207,6 +237,7 @@ export default {
   border: 1px solid #ccc;
   padding: 20px;
   background: #fff;
+
 }
 .connect .content .image {
   height: 350px;
@@ -232,5 +263,15 @@ export default {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+.techaer-detial{
+   position: fixed;
+    left:50%;
+    top:50%;
+    margin-left:-250px;
+    margin-top: -125px;
+    z-index: 1;
+
+
 }
 </style>
