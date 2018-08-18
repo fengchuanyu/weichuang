@@ -4,7 +4,7 @@
       <ul class="clearix">
         <li @click="routerChange({path:'/'})"><img src="@/assets/img/logo.png" alt="" style="margin-top: 10px"></li>
         <li
-            @click='routerChange(item);toggle(index);scrollToFoods(index)'
+            @click='routerChange(item,index)'
             class="menu-item"
             :class="{'active':index ==checkindex }"
             v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
@@ -26,7 +26,7 @@
 
         data(){
             return{
-                checkindex: 0,
+                checkindex: -1,
                 navList:[
                     {
                         name:"核心课程",
@@ -48,8 +48,9 @@
             }
         },
         methods:{
-            routerChange(item){
+            routerChange(item,index){
                 this.$router.push(item.path);
+                this.checkindex = index
             },
             login(){
                 alert("登陆")
@@ -60,9 +61,6 @@
             search(){
                 alert("搜索")
             },
-            toggle (index) {
-                this.checkindex = index
-            }
         }
     }
 </script>

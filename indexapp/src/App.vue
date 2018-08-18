@@ -19,13 +19,13 @@ export default {
 </script>
 
 <style>
-body{
-  background: #fff;
-}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#app{
+   background: #f8fafc;
 }
 .container{
   width: 1200px;
