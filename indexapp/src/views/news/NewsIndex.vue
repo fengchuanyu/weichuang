@@ -52,12 +52,15 @@ export default {
         },
         change(index){
             this.nowindex=index;
+            scrollTo(0,0);
         },
         homepage(){
-          this.nowindex=0
+          this.nowindex=0;
+          scrollTo(0,0)
         },
         goback(){
           this.nowindex--;
+          scrollTo(0,0);
           if(this.nowindex<0){
              this.nowindex=0
           }
@@ -72,12 +75,14 @@ export default {
 
         nextpage(){
           this.nowindex++;
+          scrollTo(0,0);
           if(this.nowindex>Math.ceil((this.dataList.length-1)/10-1)){
               this.nowindex=Math.ceil((this.dataList.length-1)/10-1);
           }
         },
         endpage(){
           this.nowindex=Math.ceil((this.dataList.length-1)/10-1);
+          scrollTo(0,0)
           // console.log(Math.ceil((this.dataList.length-1)/2-1)); 
         } 
    },   
