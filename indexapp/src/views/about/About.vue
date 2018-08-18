@@ -162,6 +162,9 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.list li{
+    cursor: pointer;
+}
 .list img {
   width: 100%;
   display: block;
