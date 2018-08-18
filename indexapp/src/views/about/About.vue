@@ -17,7 +17,7 @@
             </div>
             <div class="content">
                 <ul class="list">
-                    <li v-for="(items,index) in teachers" :key="index +'cl'" @click="gotodetial(items)">
+                    <li v-for="(items,index) in teachers" :key="index +'cl'">
                         <div class="cirle"><img :src="items.src" alt=""></div>
                         <h3>{{items.name}}</h3>
                         <span></span>
@@ -39,7 +39,9 @@
             <div class="his-header">
                 <h3>发展历程</h3>
                 <span></span>
-                <div class="content"></div>
+                <div class="content">
+                    <commonone :msg = "type"></commonone>
+                </div>
             </div>
         </div>
         <div class="connect">
@@ -64,10 +66,8 @@
 <script>
     import teacherdetial from '@/components/TeacherDetail.vue'
 import axios from "axios";
+import commonone from '@/components/commonOne.vue'
 export default {
-    components:{
-        teacherdetial,
-    },
   data() {
     return {
       teachers: [],
@@ -75,8 +75,13 @@ export default {
       companySrc: null,
         isShow:false,
         nowItem:'',
+        type:"type2"
     };
   },
+    components:{
+        commonone,
+        teacherdetial,
+    },
   created() {
     this.getData();
   },
@@ -123,18 +128,7 @@ export default {
   border: 1px solid #ccc;
   padding: 30px 30px;
 }
-/*.show-enter-active,.show-leave-active{
-    transition:all 2s;
-}
-.show-enter{
-   transform: scale(0.8);
-}
-.show-leave-to{
-    transform: scale(0.2);
-}
-.show-enter-to,.show-leave{
-    margin-left:0px;
-}*/
+
 .company .image img {
   display: block;
   margin: 0 auto;
@@ -237,7 +231,6 @@ export default {
   border: 1px solid #ccc;
   padding: 20px;
   background: #fff;
-
 }
 .connect .content .image {
   height: 350px;
