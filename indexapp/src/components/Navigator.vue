@@ -3,7 +3,11 @@
     <nav>
       <ul class="clearix">
         <li @click="routerChange({path:'/'})"><img src="@/assets/img/logo.png" alt="" style="margin-top: 10px"></li>
-        <li @click='routerChange(item)' v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
+        <li
+            @click='routerChange(item);toggle(index);scrollToFoods(index)'
+            class="menu-item"
+            :class="{'active':index ==checkindex }"
+            v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
 
         <div style="float: right">
           <li><input class="search" placeholder="请输入要搜索的内容" @keyup.enter="search"/></li>
@@ -19,8 +23,10 @@
 </template>
 <script>
     export default {
+
         data(){
             return{
+                checkindex: 0,
                 navList:[
                     {
                         name:"核心课程",
@@ -53,24 +59,29 @@
             },
             search(){
                 alert("搜索")
+            },
+            toggle (index) {
+                this.checkindex = index
             }
         }
     }
 </script>
 <style scoped>
+  .active {
+    color: rgb(0, 144, 255);;
+  }
   .container{
-    box-shadow:0px 1px 1px gray;
+    box-shadow:0px 1px 1px rgba(0,0,0,.2);
     overflow: hidden;
     width: 100%;
     height: 70px;
-  }
-  .li{
-    height: 70px;
+    background: #fff;
   }
   nav{
     width: 1200px;;
     text-align:center;
     margin:0 auto;
+    
   }
   nav ul{
     width: 1200px;
@@ -79,6 +90,7 @@
     float: left;
     margin-left: 20px;
     line-height: 60px;
+    font-size: 16px
   }
 
   .clearix::after{
@@ -86,12 +98,16 @@
     clear: both;
     display: block;
   }
+  input::-webkit-input-placeholder{
+    color: #aaa
+  }
   .search{
-    border: 1px gray solid;
+    border: 1px #ddd solid;
     border-radius: 42px;
     height: 30px;
     padding-left: 10px;
     color: gray;
+    padding: 5px 30px;
   }
   input{outline:none;}
   li:hover{
