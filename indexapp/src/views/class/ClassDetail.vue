@@ -45,7 +45,16 @@
     </div>
     <div class="class-intro">
       <span>清风十里，不如认识你——"Web前端"</span>
+      <p>
+        Web前端开发是从网页制作演变而来，其中包括三个要素：HTML、CSS和JavaScript；
+        Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前
+        端工程师人员的缺口将达到12万。在2017年的岗位全年共招聘136848人，平均每月招聘人
+        数需求11412人。
+        据数据显示，2017年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计在2018
+        年待遇将再一次水涨船高。
+      </p>
       <img src="@/assets/img/课程详情_03.png" alt="">
+
     </div>
 
       <div class="class-skill">
@@ -54,7 +63,8 @@
         <div class="class-skill-r">
           <div class="skill-intro">
             <p>我能学到那些技能</p>
-            <p>系统学习html,css,javascript,HTML5&CSS3,移动端开发,vue.js,react.js,</p>
+            <p>系统学习html、css、js、jQuery，HTML5 & CSS3，移动端开发、require.js、es6、sass、
+              webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。</p>
           </div>
           <ul>
             <li>
@@ -62,20 +72,20 @@
               <p>网页特效中常使用多张图片轮播</p>
             </li>
             <li>
-              <h4>轮播图特效</h4>
-              <p>网页特效中常使用多张图片轮播</p>
+              <h4>弹出层</h4>
+              <p>在登录、注册、警告、对话框常会用到</p>
             </li>
             <li>
-              <h4>轮播图特效</h4>
-              <p>网页特效中常使用多张图片轮播</p>
+              <h4>瀑布流</h4>
+              <p>广泛应用于电商网站的详细页或商品展示</p>
             </li>
             <li>
-              <h4>轮播图特效</h4>
-              <p>网页特效中常使用多张图片轮播</p>
+              <h4>固定导航</h4>
+              <p>网页中常见的导航菜单固定显示在页面的某个部位</p>
             </li>
             <li>
-              <h4>轮播图特效</h4>
-              <p>网页特效中常使用多张图片轮播</p>
+              <h4>楼层导航</h4>
+              <p>单击楼层导航时，可滚动至对应的楼层；显示对应楼层时，对应的导航项则发生改变</p>
             </li>
           </ul>
         </div>
@@ -522,13 +532,25 @@
     background: #006abc;
     margin-top: 150px;
     color:#fff;
+    position: relative;
   }
   .class-intro span{
+    position: absolute;
+    top:20px;
+    left:40px;
     font-size:20px;
+    font-weight: bold;
+  }
+  .class-intro p{
+    position: absolute;
+    top:60px;
+    left:40px;
+    width:600px;
   }
   .class-intro img{
+    position: absolute;
     height:200px;
-    float:right;
+    right:20px;
   }
   .class-skill{
     margin-top:20px;
@@ -547,23 +569,24 @@
   .class-skill>p{
     float: right;
   }
-  .skill-intro{
-    margin-top: 50px;
-    margin-left: 110px;
-  }
+
   .class-skill-r{
-    float: left;
     position: relative;
     color:#333;
+  }
+  .skill-intro{
+    position: absolute;
+    left:460px;
+    top:30px;
   }
   .class-skill ul{
     position: absolute;
     width:600px;
-    top:90px;
-    left:50px;
+    top:100px;
+    left:400px;
   }
   .class-skill-r ul li{
-    height:80px;
+    height:100%;
     width:200px;
     border-bottom:2px solid #333;
     margin:30px 30px 10px 60px;
@@ -698,6 +721,5 @@
     height: 20px;
     width: 20px;
   }
-
 
 </style>
