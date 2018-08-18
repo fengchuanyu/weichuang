@@ -17,7 +17,7 @@
             </div>
             <div class="content">
                 <ul class="list">
-                    <li v-for="(items,index) in teachers" :key="index +'cl'">
+                    <li v-for="(items,index) in teachers" :key="index +'cl'" @click="  gotodetial(items)">
                         <div class="cirle"><img :src="items.src" alt=""></div>
                         <h3>{{items.name}}</h3>
                         <span></span>
@@ -30,10 +30,8 @@
                 </ul>
             </div>
             <div class="load-content"></div>
-            <!--<transition name="show">-->
                 <teacherdetial  v-show="isShow" class="techaer-detial" :itemProps='nowItem' @click.native="disappear">
                 </teacherdetial>
-          <!--  </transition>-->
         </div>
         <div class="history">
             <div class="his-header">
