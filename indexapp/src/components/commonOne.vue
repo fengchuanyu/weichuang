@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="containers">
         <div class="container-one" v-if="isif">
             <div class="head-one">
                 <ul>
@@ -19,7 +19,11 @@
                     </ul>
                 </div>
             </div>
-            <div></div>
+            <div class="container-three" v-show="isshow">
+                <div @click="btnone" class="btn-two">
+                    <div class="btn-one btn-three">&lt</div>
+                </div>
+            </div>
         </div>
         <div class="container-two" v-if="isifs">
             <div v-for="(items,index) in dataLists" :key='index+"cl"' class="head-two">
@@ -36,12 +40,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-three" v-show="isshow">
-            <div @click="btnone" class="btn-two">
-                <span class="btn-one">&lt</span>
+            <div class="container-three" v-show="isshow">
+                <div @click="btnone" class="btn-two">
+                    <div class="btn-one">&lt</div>
+                </div>
             </div>
         </div>
+
     </div>
 </template>
 
@@ -123,7 +128,7 @@
         list-style: none;
         display: inline-block;
     }
-    .container{
+    .containers{
         box-sizing: border-box;
         overflow: hidden;
         width: 100% ;
@@ -183,13 +188,16 @@
         color: white;
         font-weight: bolder;
         display: block;
+        transform: rotate(90deg);
+    }
+    .btn-three{
+        line-height: 100px;
     }
     .container-three .btn-two{
-        width: 40px;
-        height: 80px;
+        width: 80px;
+        height: 40px;
         background-color: #008ffd;
-        line-height: 80px;
-        transform: rotate(90deg);
+        line-height: 40px;
     }
     .container-three{
         width: 80px;
