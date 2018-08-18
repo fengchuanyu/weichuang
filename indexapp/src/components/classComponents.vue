@@ -12,7 +12,7 @@
             </div>
              <div class="right">
                  <h2 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">{{itemProps.classType}}</h2>
-                 <h3 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">从0开始....</h3>
+                 <h3 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">{{itemProps.classTypeDetail}}</h3>
                  <div class="teacher-introduce-container">
                  <span class="teacher-introduce">{{itemProps.classIntroduce}}</span>
                  </div>
