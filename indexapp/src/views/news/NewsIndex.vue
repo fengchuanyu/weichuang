@@ -72,12 +72,12 @@ export default {
 
         nextpage(){
           this.nowindex++;
-          if(this.nowindex>Math.ceil((this.dataList.length-1)/4-1)){
-              this.nowindex=Math.ceil((this.dataList.length-1)/4-1);
+          if(this.nowindex>Math.ceil((this.dataList.length-1)/10-1)){
+              this.nowindex=Math.ceil((this.dataList.length-1)/10-1);
           }
         },
         endpage(){
-          this.nowindex=Math.ceil((this.dataList.length-1)/4-1);
+          this.nowindex=Math.ceil((this.dataList.length-1)/10-1);
           // console.log(Math.ceil((this.dataList.length-1)/2-1)); 
         } 
    },   
