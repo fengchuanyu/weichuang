@@ -1,6 +1,6 @@
 <template>
      <div class="news">
-       <div class="news-content" v-if="index>=nowindex*4 && index<=nowindex*4+3" v-for="(item,index) in dataList" :key="index+'di'" @click="$router.push({name:'newsdetail',params:{id:index}})">
+       <div class="news-content" v-if="index>=nowindex*10 && index<=nowindex*10+9" v-for="(item,index) in dataList" :key="index+'di'" @click="$router.push({name:'newsdetail',params:{id:index}})">
          <img :src="item.image" alt="">
          <h4 class="title">{{item.title}}</h4>
          <div class="text">{{item.text}}</div>
@@ -10,8 +10,8 @@
            <li @click="homepage" :class="{navBerfore:nowindex==0}">首页</li>
            <li @click="goback" :class="{navBerfore:nowindex==0}">上一页</li>
            <li v-for="(item,index) in indexList" :key="index+'il'" @click="change(index)" :class="{active:index==nowindex}" v-show="judge(index)">{{item}}</li>
-           <li @click="nextpage" :class="{navAfter:nowindex==Math.ceil((this.dataList.length-1)/4-1)}">下一页</li>
-           <li @click="endpage" :class="{navAfter:nowindex==Math.ceil((this.dataList.length-1)/4-1)}">尾页</li>
+           <li @click="nextpage" :class="{navAfter:nowindex==Math.ceil((this.dataList.length-1)/10-1)}">下一页</li>
+           <li @click="endpage" :class="{navAfter:nowindex==Math.ceil((this.dataList.length-1)/10-1)}">尾页</li>
          </ul>
        </div>
      </div>
@@ -40,7 +40,7 @@ export default {
                 // for(let i=0;i<this.dataList.length;i++){
                 // this.dataList[i].pictureSrc=require('@/assets/img/'+this.dataList[i].pictureSrc);                
                 // }
-                this.pageNum=Math.ceil((this.dataList.length)/4);
+                this.pageNum=Math.ceil((this.dataList.length)/10);
                 for(let i=0;i<this.pageNum;i++)
                 {
                       this.indexList[i]=""+(i+1);
