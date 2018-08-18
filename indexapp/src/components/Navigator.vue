@@ -3,7 +3,11 @@
     <nav>
       <ul class="clearix">
         <li @click="routerChange({path:'/'})"><img src="@/assets/img/logo.png" alt="" style="margin-top: 10px"></li>
-        <li @click='routerChange(item)' v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
+        <li
+            @click='routerChange(item);toggle(index);scrollToFoods(index)'
+            class="menu-item"
+            :class="{'active':index ==checkindex }"
+            v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
 
         <div style="float: right">
           <li><input class="search" placeholder="请输入要搜索的内容" @keyup.enter="search"/></li>
@@ -19,8 +23,10 @@
 </template>
 <script>
     export default {
+
         data(){
             return{
+                checkindex: 0,
                 navList:[
                     {
                         name:"核心课程",
@@ -53,11 +59,17 @@
             },
             search(){
                 alert("搜索")
+            },
+            toggle (index) {
+                this.checkindex = index
             }
         }
     }
 </script>
 <style scoped>
+  .active {
+    color: rgb(0, 144, 255);;
+  }
   .container{
     box-shadow:0px 1px 1px gray;
     overflow: hidden;
