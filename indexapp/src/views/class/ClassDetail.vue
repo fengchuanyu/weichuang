@@ -107,10 +107,10 @@
       <div class="lesson-content" v-for="(item,index) in planList" :key="index+'pl'"  v-show="item.isShow">
         <h4>{{item.title}}</h4>
         <p>{{item.info}}</p>
-        <div class="plan-items" >
+        <div class="plan-items">
           <div  v-for="(items,cindex) in item.class" :key="cindex+'classl'">
             <div>{{items.classTitle}}</div>
-            <h5>{{items.introTitle}}</h5>
+            <h4>{{items.introTitle}}</h4>
             <p>{{items.introContent}}</p>
           </div>
         </div>
@@ -213,29 +213,29 @@
                 planList:[
                     {
                         title:'第一阶段',
-                        info:'HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。',
+                        info:'HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。',
                         class:[
                             {
                                 classTitle:'第1课',
                                 introTitle:'HTML基础',
-                                introContent:'HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。',
+                                introContent:'HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。',
 
                             },{
                                 classTitle:'第2课',
                                 introTitle:'HTML表格',
-                                introContent:'HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。',
+                                introContent:'表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。',
                             },{
                                 classTitle:'第3课',
                                 introTitle:'HTML表单',
-                                introContent:'HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准.',
+                                introContent:'表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。',
                             },{
                                 classTitle: '第4课',
                                 introTitle: '搭建网页HTML结构',
-                                introContent: 'HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出',
+                                introContent: '本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。',
                             },{
                                 classTitle:'第5课',
                                 introTitle:'课程进阶',
-                                introContent:'XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。',
+                                introContent:'本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。',
                             },
                         ],
                         isShow:true,
@@ -275,7 +275,7 @@
                             {
                                 classTitle:'第1课',
                                 introTitle:'JS基础',
-                                introContent:'HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。',
+                                introContent:'素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。',
                             },{
                                 classTitle:'第2课',
                                 introTitle:'JS',
@@ -288,7 +288,8 @@
                                 classTitle: '第4课',
                                 introTitle: 'JS',
                                 introContent: 'HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出',
-                            },{
+                            },
+                            {
                                 classTitle:'第5课',
                                 introTitle:'课程进阶',
                                 introContent:'XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。',
@@ -308,7 +309,8 @@
                                 classTitle:'第2课',
                                 introTitle:'HTML表格',
                                 introContent:'HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。',
-                            },{
+                            },
+                            {
                                 classTitle:'第3课',
                                 introTitle:'HTML表单',
                                 introContent:'HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准.',
@@ -370,7 +372,7 @@
                         isShow:false,
                     },
                 ],
-                nextLesson:'2018/8/22 00:00:00',
+                nextLesson:'2018/8/19 20:27:00',
                 now:null,
                 end:null,
                 leftTime:null,
@@ -453,7 +455,7 @@
     padding-top:3%;
   }
   .count-down p,.back-info p{
-    font-size:14px;
+    font-size:16px;
   }
   .back-btns{
     padding-top: 5%;
@@ -471,7 +473,7 @@
     padding-top: 10px;
   }
   .count-down span{
-    font-size: 24px;
+    font-size: 26px;
     font-weight:bold;
   }
   .front{
@@ -491,12 +493,13 @@
     height:60%;
     margin-top: 30px;
     padding-left:40px;
+    font-size:15px;
   }
   .front div:last-child{
     border:none;
   }
   .front div p:nth-child(2){
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
   }
   .preLesson:hover,.lessonSechedule:hover{
@@ -538,7 +541,7 @@
     position: absolute;
     top:20px;
     left:40px;
-    font-size:20px;
+    font-size:22px;
     font-weight: bold;
   }
   .class-intro p{
@@ -562,7 +565,7 @@
     float: left;
   }
   .class-skill>p,.skill-intro p:first-child{
-    font-size: 20px;
+    font-size: 22px;
     font-weight:bold;
     color:#333;
   }
@@ -576,25 +579,28 @@
   }
   .skill-intro{
     position: absolute;
-    left:460px;
+    left:510px;
     top:30px;
   }
   .class-skill ul{
     position: absolute;
     width:600px;
     top:100px;
-    left:400px;
+    left:450px;
   }
   .class-skill-r ul li{
     height:100%;
-    width:200px;
+    width:210px;
     border-bottom:2px solid #333;
     margin:30px 30px 10px 60px;
     float: left;
   }
+  .class-skill-r ul li h4{
+    font-weight: bold;
+  }
   .treatment{
     color:#333;
-    margin-top:50px;
+    margin-top:70px;
     text-align: center;
   }
   .treatment-items{
@@ -612,10 +618,11 @@
     width:120px;
     background: #f8fafc;
     border-radius: 10px;
-    margin:10px;
+    margin:30px 10px 10px 10px;
   }
   .treatment-items p{
     margin-top: 10px;
+    color:#484949;
   }
 
   .lesson-plan{
@@ -630,14 +637,24 @@
     margin:10px;
     font-weight: bold;
   }
+  .lesson-plan p:nth-child(2){
+    margin: 10px auto;
+    width: 800px;
+    text-align: left;
+    line-height: 30px;
+  }
   .plan-items{
     display: flex;
     margin: 20px 0 40px 0;
   }
+  .plan-items p{
+    width:200px;
+    margin: 0 auto;
+  }
 
   .plan-items>div{
     width:120px;
-    height:130px;
+    height:150px;
     flex:1;
     background: #fff;
     margin:10px;
@@ -651,7 +668,7 @@
     border-radius: 10px 10px 0 0;
   }
   .plan-items>div p{
-    font-size: 12px;
+    font-size: 14px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -683,6 +700,7 @@
   }
   .suitable p{
     margin:20px;
+    font-size: 15px;
   }
 
   .comments{
@@ -692,7 +710,6 @@
   .comments ul{
     display: flex;
     flex-wrap: wrap;
-    /*width:100%;*/
   }
 
   .comments li{
@@ -701,10 +718,11 @@
     padding: 50px;
     float: left;
     border-right:1px solid #000;
-    font-size: 12px;
+    font-size: 14px;
     color:#424242;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   .comments li:nth-child(3n){
     border:none;
