@@ -24,8 +24,9 @@
                         <p class="job">{{items.job}}</p>
                         <div class="details">
                             {{items.introduction}}
-                            <a href="https://www.baidu.com/" class="more">更多资历→</a>
                         </div>
+                        <a href="JavaScript:;" class="more">更多资历→</a>
+
                     </li>
                 </ul>
             </div>
@@ -33,7 +34,7 @@
                 <teacherdetial  v-show="isShow" class="techaer-detial" :itemProps='nowItem' @click.native="disappear">
                 </teacherdetial>
         </div>
-        <div class="history">
+        <!-- <div class="history">
             <div class="his-header">
                 <h3>发展历程</h3>
                 <span></span>
@@ -41,7 +42,7 @@
                     <commonone :msg = "type"></commonone>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="connect">
             <div class="con-header">
                 <h3>联系我们</h3>
@@ -160,10 +161,15 @@ export default {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
+  /* justify-content: space-between; */
 }
 .list li{
     cursor: pointer;
+    margin-right:26px;
+}
+.list li:nth-child(4n){
+  margin-right:0px;
 }
 .list img {
   width: 100%;
@@ -204,8 +210,10 @@ export default {
 }
 .content .details {
   padding: 10px;
+  height:92px;
+  overflow: hidden;
 }
-.content .details .more {
+.content .more {
   padding-top: 30px;
   float: right;
   color: #529de3;

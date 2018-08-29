@@ -9,12 +9,12 @@
             :class="{'active':index ==checkindex }"
             v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
 
-        <div style="float: right;padding-right:25px">
+       <!--  <div style="float: right;padding-right:25px">
           <li><input class="search" placeholder="请输入要搜索的内容" @keyup.enter="search"/></li>
           <li @click="login">登陆</li>
           <li>/</li>
           <li @click="register">注册</li>
-        </div>
+        </div> -->
 
       </ul>
     </nav>
@@ -42,10 +42,6 @@
                     {
                         name:"成功案例",
                         path:'/case'
-                    },
-                    {
-                        name:"新闻资讯",
-                        path:'/newsindex'
                     },
                     {
                         name:"关于我们",

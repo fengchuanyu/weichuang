@@ -14,9 +14,6 @@
                 </div>
                 <div class="detial">
                     {{itemProps.introduction}}
-                    五年前端开发经验，曾任职聚美优品高级前端工程师，京东商城技术部、服饰家居
-                    事业部资深web前端工程师，期间主导了商城的重构以及负责大促首页前端项目，
-                    工作中积累了丰富的各种Web开发技术的实战经验。
                 </div>
             </div>
             </transition>

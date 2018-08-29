@@ -16,9 +16,9 @@
           </div>
           <div class="detail">{{item.evaluate}}</div>
           <ul class="clearix">
-            <li class="student-name">学员名称</li>
-            <li class="student-name">毕业学校</li>
-            <li>就业公司</li>
+            <li class="student-name">{{item.name}}</li>
+            <li class="student-name">{{item.school}}</li>
+            <li>{{item.company}}</li>
           </ul>
         </a>
        <!-- <a>
@@ -192,15 +192,19 @@ export default {
   .student-info a:first-of-type{
     margin-left: 0;
   }
+  .student-info img{
+    width:390px;
+    height:200px;
+  }
   .detail{
     display: -webkit-box;
-    -webkit-line-clamp: 2;/*限制文本的行数，只显示两行*/
+    -webkit-line-clamp: 5;/*限制文本的行数，只显示两行*/
     -webkit-box-orient: vertical;
     overflow: hidden;
     width: 390px;
     text-align: center;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 10px 10px 0 10px;
     box-sizing: border-box;
     letter-spacing: 3px;
   }
