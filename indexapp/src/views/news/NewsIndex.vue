@@ -45,8 +45,6 @@ export default {
                       this.indexList[i]=""+(i+1);
                 }  
            })
-           .catch((error)=>{
-           })
         },
         change(index){
             this.nowindex=index;

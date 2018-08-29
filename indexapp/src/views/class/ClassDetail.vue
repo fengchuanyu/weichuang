@@ -4,7 +4,7 @@
       <div class="head">
         <div class="back">
           <div class="back-info">
-            <h3>Web前端工程师的核心课程</h3>
+            <h1>Web前端工程师的核心课程</h1>
             <p>本课程已帮助数千名在校大学生获得国内BAT公司offer</p>
           </div>
           <div class="back-btns">
@@ -137,7 +137,7 @@
             <img :src="item.userIcon" alt="">
             <p>{{item.userName}}</p>
             <div class="stars">
-              <span v-for="items in item.stars">
+              <span v-for="(items,index) in item.stars" :key="index+'star'">
                 <img src="@/assets/img/star.png" alt="">
               </span>
             </div>
@@ -372,7 +372,7 @@
                         isShow:false,
                     },
                 ],
-                nextLesson:'2018/8/19 20:27:00',
+                nextLesson:'2018/9/19 20:27:00',
                 now:null,
                 end:null,
                 leftTime:null,
@@ -432,6 +432,9 @@
     }
 </script>
 <style scoped>
+  h1{
+    font-size: 45px
+  }
   .content{
     width:100%;
     overflow: hidden;
@@ -452,13 +455,13 @@
     position: relative;
   }
   .back-info{
-    padding-top:3%;
+    padding-top:35px;
   }
   .count-down p,.back-info p{
-    font-size:16px;
+    font-size:18px;
   }
   .back-btns{
-    padding-top: 5%;
+    padding-top: 22px;
   }
   .back button{
     width:110px;

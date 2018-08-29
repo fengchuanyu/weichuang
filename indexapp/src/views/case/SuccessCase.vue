@@ -75,7 +75,8 @@
   </div>
 </template>
 <script>
-    import commonone from '@/components/commonOne.vue'
+import commonone from '@/components/commonOne.vue'
+import axios from 'axios'
 export default {
     created(){
         this.getData();
