@@ -415,7 +415,7 @@ export default {
 .case-body-all {
   padding-top: 20px;
   height: 350px;
-  animation: test 30s linear infinite;
+  animation: test 60s linear infinite;
   overflow: hidden;
 }
 

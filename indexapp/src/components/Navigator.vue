@@ -24,22 +24,11 @@
 <script>
     export default {
         created() {
-          const checkRouter = location.pathname;
-          switch(checkRouter){
-            case '/class':
-            case '/classdetail':
-            this.checkindex = 0;
-            break;
-            case '/case':
-            this.checkindex = 1;
-            break;
-            case '/about':
-            this.checkindex = 3;
-            break;
-            case '/newsindex':
-            case '/newsdetail':
-            this.checkindex = 2;
-            break;
+          this.holdRouter(location.hash.replace(/#+/g,""))
+        },
+        watch:{
+          $route(to){
+            this.holdRouter(to.path)
           }
         },
         data(){
@@ -66,6 +55,24 @@
             }
         },
         methods:{
+            holdRouter(path){
+              switch(path){
+                case '/class':
+                case '/classdetail':
+                this.checkindex = 0;
+                break;
+                case '/case':
+                this.checkindex = 1;
+                break;
+                case '/about':
+                this.checkindex = 3;
+                break;
+                case '/newsindex':
+                case '/newsdetail':
+                this.checkindex = 2;
+                break;
+              }
+            },
             routerChange(item,index){
                 this.$router.push(item.path);
                 this.checkindex = index

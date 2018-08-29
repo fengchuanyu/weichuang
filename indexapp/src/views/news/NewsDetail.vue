@@ -47,9 +47,6 @@ export default {
            .then((res)=>{
                this.dataList=res.data.newsData
            })
-           .catch((error)=>{
-             console.log(error);
-           })
          },
          homepage(){
           //  console.log("home");

@@ -11,7 +11,7 @@ import NewsDetail from './views/news/NewsDetail.vue'
 Vue.use(Router)
  
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes: [
     {
@@ -27,7 +27,7 @@ export default new Router({
     {
       path: '/case',
       name: 'case',
-      component: SuccessCase
+      component: SuccessCase,
     },
     {
       path: '/about',
