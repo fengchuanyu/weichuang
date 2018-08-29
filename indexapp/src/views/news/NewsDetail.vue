@@ -88,8 +88,7 @@ export default {
    }
    .content{
      position: relative;
-     box-shadow:2px 2px 10px 5px rgba(255,255,255,.6);
-     border: 1px solid gray;
+     border: 1px solid #ddd;
      background: #fff;
      text-align: center;
      padding: 0 5%;

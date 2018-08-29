@@ -9,7 +9,7 @@
             :class="{'active':index ==checkindex }"
             v-for="(item, index) in navList" :key='index+"nl"'>{{item.name}}</li>
 
-        <div style="float: right">
+        <div style="float: right;padding-right:25px">
           <li><input class="search" placeholder="请输入要搜索的内容" @keyup.enter="search"/></li>
           <li @click="login">登陆</li>
           <li>/</li>
@@ -23,7 +23,25 @@
 </template>
 <script>
     export default {
-
+        created() {
+          const checkRouter = location.pathname;
+          switch(checkRouter){
+            case '/class':
+            case '/classdetail':
+            this.checkindex = 0;
+            break;
+            case '/case':
+            this.checkindex = 1;
+            break;
+            case '/about':
+            this.checkindex = 3;
+            break;
+            case '/newsindex':
+            case '/newsdetail':
+            this.checkindex = 2;
+            break;
+          }
+        },
         data(){
             return{
                 checkindex: -1,
