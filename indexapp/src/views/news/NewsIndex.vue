@@ -35,7 +35,6 @@ export default {
         getData(){
            axios.get('./data/newsdata.json')
            .then((response)=>{
-                console.log(response);
                 this.dataList=response.data.newsData;
                 // for(let i=0;i<this.dataList.length;i++){
                 // this.dataList[i].pictureSrc=require('@/assets/img/'+this.dataList[i].pictureSrc);                
@@ -47,7 +46,6 @@ export default {
                 }  
            })
            .catch((error)=>{
-                console.log(error);
            })
         },
         change(index){
@@ -91,12 +89,13 @@ export default {
 <style scoped>
 .news{
   background: #fff;
-  border:1px solid gray;
-  width: 1100px;
-  margin: 2% auto;
+  border:1px solid #ccc;
+  width: 1200px;
+  margin: 20px auto;
+  box-sizing: border-box
 }
 .news-content{
-  border:1px solid darkgray;
+  border:1px solid #ddd;
   margin: 0 auto;
   margin-top: 20px;
   height: 200px;

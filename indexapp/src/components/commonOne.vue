@@ -21,7 +21,7 @@
             </div>
             <div class="container-three" v-show="isshow">
                 <div @click="btnone" class="btn-two">
-                    <div class="btn-one btn-three">&lt</div>
+                    <div class="btn-one btn-three">&lt;</div>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
             </div>
             <div class="container-three" v-show="isshow">
                 <div @click="btnone" class="btn-two">
-                    <div class="btn-one">&lt</div>
+                    <div class="btn-one">&lt;</div>
                 </div>
             </div>
         </div>
@@ -162,7 +162,7 @@
         position: absolute;
         border-radius: 50%;
         left: 211px;
-        top: 0px;
+        top: 12px;
         background-color: white;
         z-index: 1;
     }

@@ -116,7 +116,6 @@ export default {
     width: 100%;
     height: 400px;
     position: relative;
-    margin-top: 10px;
   }
   header img{
     position: absolute;
@@ -199,7 +198,7 @@ export default {
     overflow: hidden;
     width: 390px;
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     padding: 10px;
     box-sizing: border-box;
     letter-spacing: 3px;
