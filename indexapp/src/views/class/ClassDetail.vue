@@ -4,7 +4,7 @@
       <div class="head">
         <div class="back">
           <div class="back-info">
-            <h1>Web前端工程师的核心课程</h1>
+            <h1>{{classlist.classType}}</h1>
             <p>本课程已帮助数千名在校大学生获得国内BAT公司offer</p>
           </div>
           <div class="back-btns">
@@ -44,48 +44,24 @@
       </nav>
     </div>
     <div class="class-intro">
-      <span>清风十里，不如认识你——"Web前端"</span>
-      <p>
-        Web前端开发是从网页制作演变而来，其中包括三个要素：HTML、CSS和JavaScript；
-        Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前
-        端工程师人员的缺口将达到12万。在2017年的岗位全年共招聘136848人，平均每月招聘人
-        数需求11412人。
-        据数据显示，2017年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计在2018
-        年待遇将再一次水涨船高。
-      </p>
+      <span>{{classlist.classIntTitle}}</span>
+      <p>{{classlist.classIntroduce}}</p>
       <img src="@/assets/img/课程详情_03.png" alt="">
 
     </div>
 
       <div class="class-skill">
-        <p>前端入门从这里开始</p>
+        <p>{{classlist.classType}}入门从这里开始</p>
         <img src="@/assets/img/课程详情_07.jpg" alt="">
         <div class="class-skill-r">
           <div class="skill-intro">
             <p>我能学到那些技能</p>
-            <p>系统学习html、css、js、jQuery，HTML5 & CSS3，移动端开发、require.js、es6、sass、
-              webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。</p>
+            <p>{{classlist.skillDescription}}</p>
           </div>
           <ul>
-            <li>
-              <h4>轮播图特效</h4>
-              <p>网页特效中常使用多张图片轮播</p>
-            </li>
-            <li>
-              <h4>弹出层</h4>
-              <p>在登录、注册、警告、对话框常会用到</p>
-            </li>
-            <li>
-              <h4>瀑布流</h4>
-              <p>广泛应用于电商网站的详细页或商品展示</p>
-            </li>
-            <li>
-              <h4>固定导航</h4>
-              <p>网页中常见的导航菜单固定显示在页面的某个部位</p>
-            </li>
-            <li>
-              <h4>楼层导航</h4>
-              <p>单击楼层导航时，可滚动至对应的楼层；显示对应楼层时，对应的导航项则发生改变</p>
+            <li v-for="(item,index) in classlist.skillPoint" :key="index">
+              <h4>{{item.skillName}}</h4>
+              <p>{{item.skillInt}}</p>
             </li>
           </ul>
         </div>
@@ -95,7 +71,7 @@
           <h3>在这里你能享受到的待遇</h3>
           <div class="treatment-items">
             <div  v-for="(item,index) in tratementList" :key="index+'tl'">
-              <img :src=item.img alt="">
+              <img :src="item.img" alt="">
               <p>{{item.intro}}</p>
             </div>
           </div>
@@ -115,6 +91,7 @@
           </div>
         </div>
       </div>
+      <div v-if="planList.length">
       <div class="show-all" @click="showAll" v-show="!planList[1].isShow">
         查看全部课程安排
         <img src="@/assets/img/arrow.png" alt="">
@@ -123,12 +100,13 @@
         收起
         <img src="@/assets/img/arrow_up.png" alt="">
       </div>
+      </div>
     </div>
 
     <div class="wrapper">
       <div class="suitable">
         <h3>合适人群</h3>
-        <p>知道你对web前端充满兴趣，你就是最适合的人选</p>
+        <p>知道你对{{classlist.classType}}充满兴趣，你就是最适合的人选</p>
       </div>
       <div class="comments">
         <h3>我在这里只为等待你的到来</h3>
@@ -145,6 +123,7 @@
           </li>
         </ul>
       </div>
+      <div v-if="commentList.length">
       <div class="show-all" @click="showAllComment" v-show="!commentList[4].isShow">
         查看全部用户评论
         <img src="@/assets/img/arrow.png" alt="">
@@ -152,6 +131,7 @@
       <div class="show-all" @click="showAllComment" v-show="commentList[4].isShow">
         收起
         <img src="@/assets/img/arrow_up.png" alt="">
+      </div> 
       </div>
     </div>
 
@@ -162,216 +142,12 @@
     export default {
         data(){
             return{
-                classnavList:[
-                    {
-                        id:0,
-                        title:'课程介绍',
-                        path:'',
-                        isSelected:true,
-                    },
-                    {
-                        id:1,
-                        title:'课程大纲',
-                        path:'',
-                        isSelected:false,
-                    },
-                    {
-                        id:2,
-                        title:'学员评价',
-                        path:'',
-                        isSelected:false,
-                    },
-                    {
-                        id:3,
-                        title:'课程笔记',
-                        path:'',
-                        isSelected:false,
-                    },
-                ],
-                tratementList:[
-                    {
-                        img:require('@/assets/img/课程详情-1.png'),
-                        intro:'庞大广泛的人脉圈',
-                    },
-                    {
-                        img:require('@/assets/img/课程详情-2.png'),
-                        intro:'专业的就业指导',
-                    },
-                    {
-                        img:require('@/assets/img/课程详情-3.png'),
-                        intro:'丰富的教学经验',
-                    },
-                    {
-                        img:require('@/assets/img/课程详情-4.png'),
-                        intro:'合理的课程安排',
-                    },
-                    {
-                        img:require('@/assets/img/课程详情-5.png'),
-                        intro:'最牛的就业保障',
-                    }
-                ],
-                planList:[
-                    {
-                        title:'第一阶段',
-                        info:'HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。',
-                        class:[
-                            {
-                                classTitle:'第1课',
-                                introTitle:'HTML基础',
-                                introContent:'HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。',
-
-                            },{
-                                classTitle:'第2课',
-                                introTitle:'HTML表格',
-                                introContent:'表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。',
-                            },{
-                                classTitle:'第3课',
-                                introTitle:'HTML表单',
-                                introContent:'表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。',
-                            },{
-                                classTitle: '第4课',
-                                introTitle: '搭建网页HTML结构',
-                                introContent: '本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。',
-                            },{
-                                classTitle:'第5课',
-                                introTitle:'课程进阶',
-                                introContent:'本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。',
-                            },
-                        ],
-                        isShow:true,
-                    },
-                    {
-                        title:'第二阶段',
-                        info:'CSS”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。',
-                        class:[
-                            {
-                                classTitle:'第1课',
-                                introTitle:'CSS基础',
-                                introContent:'HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。',
-                            },{
-                                classTitle:'第2课',
-                                introTitle:'CSS',
-                                introContent:'HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。',
-                            },{
-                                classTitle:'第3课',
-                                introTitle:'CSS',
-                                introContent:'HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准.',
-                            },{
-                                classTitle: '第4课',
-                                introTitle: 'CSS',
-                                introContent: 'HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出',
-                            },{
-                                classTitle:'第5课',
-                                introTitle:'CSS',
-                                introContent:'XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。',
-                            },
-                        ],
-                        isShow:false,
-                    },
-                    {
-                        title:'第三阶段',
-                        info:'HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。',
-                        class:[
-                            {
-                                classTitle:'第1课',
-                                introTitle:'JS基础',
-                                introContent:'素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。',
-                            },{
-                                classTitle:'第2课',
-                                introTitle:'JS',
-                                introContent:'HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。',
-                            },{
-                                classTitle:'第3课',
-                                introTitle:'JS',
-                                introContent:'HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准.',
-                            },{
-                                classTitle: '第4课',
-                                introTitle: 'JS',
-                                introContent: 'HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出',
-                            },
-                            {
-                                classTitle:'第5课',
-                                introTitle:'课程进阶',
-                                introContent:'XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。',
-                            },
-                        ],
-                        isShow:false,
-                    },
-                    {
-                        title:'第四阶段',
-                        info:'HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。',
-                        class:[
-                            {
-                                classTitle:'第1课',
-                                introTitle:'HTML基础',
-                                introContent:'HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。',
-                            },{
-                                classTitle:'第2课',
-                                introTitle:'HTML表格',
-                                introContent:'HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。',
-                            },
-                            {
-                                classTitle:'第3课',
-                                introTitle:'HTML表单',
-                                introContent:'HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准.',
-                            },{
-                                classTitle: '第4课',
-                                introTitle: '搭建网页HTML结构',
-                                introContent: 'HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出',
-                            },{
-                                classTitle:'第5课',
-                                introTitle:'课程进阶',
-                                introContent:'XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。',
-                            },
-                        ],
-                        isShow:false,
-                    },
-                ],
-
-                commentList:[
-                    {
-                        userName:'nicheng',
-                        stars:4,
-                        userIcon:require('@/assets/img/user.png'),
-                        content:'讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现',
-                        isShow:true,
-                    },
-                    {
-                        userName:'昵称',
-                        stars:5,
-                        userIcon:require('@/assets/img/user.png'),
-                        content:'讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现在来看看，正好可以巩固自己以前看书漏掉的知识，最有特点的就是课后习题，这一点我个人很喜欢。可能是习惯了吧，习惯听完课有题做的感觉，这样可以迅速的发现哪里自己存在问题，进行查漏补缺，总之课程很棒!',
-                        isShow:true,
-                    },
-                    {
-                        userName:'aaa',
-                        stars:3,
-                        userIcon:require('@/assets/img/user.png'),
-                        content:'每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现',
-                        isShow:true,
-                    },
-                    {
-                        userName:'aaa',
-                        stars:3,
-                        userIcon:require('@/assets/img/user.png'),
-                        content:'每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现',
-                        isShow:false,
-                    },
-                    {
-                        userName:'aaa',
-                        stars:3,
-                        userIcon:require('@/assets/img/user.png'),
-                        content:'每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现',
-                        isShow:false,
-                    },
-                    {
-                        userName:'aaa',
-                        stars:3,
-                        userIcon:require('@/assets/img/user.png'),
-                        content:'讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面,每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现',
-                        isShow:false,
-                    },
-                ],
+                Objindex:this.$route.params.objindex,
+                classnavList:[],
+                tratementList:[],
+                classlist:[],
+                planList:[],
+                commentList:[],
                 nextLesson:'2018/9/19 20:27:00',
                 now:null,
                 end:null,
@@ -382,12 +158,34 @@
                 second:0,
             }
         },
+        created(){
+            this.getData();
+        },
         mounted(){
             setInterval(()=>{
                 this.countDown()
             },1000)
         },
         methods: {
+            getData(){
+                axios.get('./data/clasdetail.json')
+                .then((res) =>{
+                    this.tratementList = res.data.tratementList;
+                    this.commentList=res.data.classTypes[this.Objindex-1].commentList;
+                    for (let i = 0; i < res.data.tratementList.length; i++) {
+                      this.tratementList[i].img = require("@/assets/img/"+this.tratementList[i].img);
+                    }
+                    for (let j = 0; j < this.commentList.length; j++) {
+                      this.commentList[j].userIcon = require("@/assets/img/"+this.commentList[j].userIcon);
+                    }
+                    this.classnavList=res.data.classnavList;
+                    this.planList=res.data.classTypes[this.Objindex-1].planList;
+                    this.classlist=res.data.classTypes[this.Objindex-1];
+                })
+                .catch(() =>{
+
+                })
+            },
             select(id) {
                 for (let i = 0; i < this.classnavList.length; i++) {
                     if (this.classnavList[i].isSelected) {
@@ -510,7 +308,7 @@
     background: #fff;
   }
   .classNav ul{
-    width:100%;
+    
     margin:0 auto;
     position: absolute;
     left:50%;

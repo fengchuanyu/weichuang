@@ -1,0 +1,808 @@
+{
+    "classnavList":[
+        {
+            "id":0,
+            "title":"课程介绍",
+            "path":"",
+            "isSelected":true
+        },
+        {
+            "id":1,
+            "title":"课程大纲",
+            "path":"",
+            "isSelected":false
+        },
+        {
+            "id":2,
+            "title":"学员评价",
+            "path":"",
+            "isSelected":false
+        },
+        {
+            "id":3,
+            "title":"课程笔记",
+            "path":"",
+            "isSelected":false
+        }
+    ],
+    "tratementList":[
+        {
+            "img":"课程详情-1.png",
+            "intro":"庞大广泛的人脉圈"
+        },
+        {
+            "img":"课程详情-2.png",
+            "intro":"专业的就业指导"
+        },
+        {
+            "img":"课程详情-3.png",
+            "intro":"丰富的教学经验"
+        },
+        {
+            "img":"课程详情-4.png",
+            "intro":"合理的课程安排"
+        },
+        {
+            "img":"课程详情-5.png",
+            "intro":"最牛的就业保障"
+        }
+    ],
+    "classTypes":[
+        {
+            "classType":"Web全栈课程",
+            "classIntTitle":"清风十里，不如认识你——\"Web前端\"",
+            "classIntroduce":"Web前端开发是从网页制作演变而来，其中包括三个要素：HTML、CSS和JavaScript；Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前端工程师人员的缺口将达到12万。在2017年的岗位全年共招聘136848人，平均每月招聘人数需求11412人。据数据显示，2017年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计在2018年待遇将再一次水涨船高。",
+            "skillDescription":"系统学习html、css、js、jQuery，HTML5 & CSS3，移动端开发、require.js、es6、sass、webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。",
+            "skillPoint":[
+                {
+                    "skillName":"轮播图特效",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"弹出层",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"瀑布流",
+                    "skillInt":"广泛应用于电商网站的详细页或商品展示"
+                },
+                {
+                    "skillName":"固定导航",
+                    "skillInt":"网页中常见的导航菜单固定显示在页面的某个部位"
+                },
+                {
+                    "skillName":"楼层导航",
+                    "skillInt":"单击楼层导航时，可滚动至对应的楼层；显示对应楼层时，对应的导航项则发生改变"
+                }
+            ],
+            "planList":[
+                {
+                    "title":"第一阶段",
+                    "info":"HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。"
+
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。"
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。"
+                        }
+                    ],
+                    "isShow":true
+                },
+                {
+                    "title":"第二阶段",
+                    "info":"CSS”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"CSS基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML3.0规范是由当时刚C于19成立的W395年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "CSS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"CSS",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第三阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"JS基础",
+                            "introContent":"素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"JS",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"JS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "JS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },
+                        {
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第四阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },
+                        {
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                }
+            ],
+            "commentList":[
+                {
+                    "userName":"nicheng",
+                    "stars":4,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"昵称",
+                    "stars":5,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现在来看看，正好可以巩固自己以前看书漏掉的知识，最有特点的就是课后习题，这一点我个人很喜欢。可能是习惯了吧，习惯听完课有题做的感觉，这样可以迅速的发现哪里自己存在问题，进行查漏补缺，总之课程很棒!",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面,每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                }
+            ]
+        },
+        {
+            "classType":"人工智能",
+            "classIntTitle":"清风十里，不如认识你——\"人工智能\"",
+            "classIntroduce":"人工智能开发是从AI制作演变而来，其中包括三个要素：HTML、CSS和JavaScript；Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前端工程师人员的缺口将达到12万。在2017年的岗位全年共招聘136848人，平均每月招聘人数需求11412人。据数据显示，2017年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计在2018年待遇将再一次水涨船高。",
+            "skillDescription":"系统学习人工智能、人工智能、人工智能、java，HTML5 & CSS3，移动端开发、require.js、es6、sass、webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。",
+            "skillPoint":[
+                {
+                    "skillName":"轮播图特效",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"弹出层",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"瀑布流",
+                    "skillInt":"广泛应用于电商网站的详细页或商品展示"
+                },
+                {
+                    "skillName":"固定导航",
+                    "skillInt":"网页中常见的导航菜单固定显示在页面的某个部位"
+                },
+                {
+                    "skillName":"楼层导航",
+                    "skillInt":"单击楼层导航时，可滚动至对应的楼层；显示对应楼层时，对应的导航项则发生改变"
+                }
+            ],
+            "planList":[
+                {
+                    "title":"第一阶段",
+                    "info":"HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。"
+
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。"
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。"
+                        }
+                    ],
+                    "isShow":true
+                },
+                {
+                    "title":"第二阶段",
+                    "info":"CSS”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"CSS基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML3.0规范是由当时刚C于19成立的W395年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "CSS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"CSS",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第三阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"JS基础",
+                            "introContent":"素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"JS",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"JS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "JS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },
+                        {
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第四阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },
+                        {
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                }
+            ],
+            "commentList":[
+                {
+                    "userName":"nicheng",
+                    "stars":4,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"昵称",
+                    "stars":5,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现在来看看，正好可以巩固自己以前看书漏掉的知识，最有特点的就是课后习题，这一点我个人很喜欢。可能是习惯了吧，习惯听完课有题做的感觉，这样可以迅速的发现哪里自己存在问题，进行查漏补缺，总之课程很棒!",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面,每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                }
+            ]
+        },
+        {
+            "classType":"Web",
+            "classIntTitle":"清风十里，不如认识你——\"Web前端\"",
+            "classIntroduce":"Web前端开发是从网页制作演变而来，其中包括三个要素：HTML、CSS和JavaScript；Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前端工程师人员的缺口将达到12万。在2017年的岗位全年共招聘136848人，平均每月招聘人数需求11412人。据数据显示，2017年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计在2018年待遇将再一次水涨船高。",
+            "skillDescription":"系统学习html、css、js、jQuery，HTML5 & CSS3，移动端开发、require.js、es6、sass、webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。",
+            "skillPoint":[
+                {
+                    "skillName":"轮播图特效",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"弹出层",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"瀑布流",
+                    "skillInt":"广泛应用于电商网站的详细页或商品展示"
+                },
+                {
+                    "skillName":"固定导航",
+                    "skillInt":"网页中常见的导航菜单固定显示在页面的某个部位"
+                },
+                {
+                    "skillName":"楼层导航",
+                    "skillInt":"单击楼层导航时，可滚动至对应的楼层；显示对应楼层时，对应的导航项则发生改变"
+                }
+            ],
+            "planList":[
+                {
+                    "title":"第一阶段",
+                    "info":"HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。"
+
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。"
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。"
+                        }
+                    ],
+                    "isShow":true
+                },
+                {
+                    "title":"第二阶段",
+                    "info":"CSS”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"CSS基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML3.0规范是由当时刚C于19成立的W395年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "CSS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"CSS",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第三阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"JS基础",
+                            "introContent":"素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"JS",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"JS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "JS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },
+                        {
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第四阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },
+                        {
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                }
+            ],
+            "commentList":[
+                {
+                    "userName":"nicheng",
+                    "stars":4,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"昵称",
+                    "stars":5,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现在来看看，正好可以巩固自己以前看书漏掉的知识，最有特点的就是课后习题，这一点我个人很喜欢。可能是习惯了吧，习惯听完课有题做的感觉，这样可以迅速的发现哪里自己存在问题，进行查漏补缺，总之课程很棒!",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面,每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                }
+            ]
+        },
+        {
+            "classType":"JAVA",
+            "classIntTitle":"清风十里，不如认识你——\"JAVA\"",
+            "classIntroduce":"JAVA开发是从网页制作演变而来，其中包括三个要素：HTML、CSS和JavaScript；Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前端工程师人员的缺口将达到12万。在2017年的岗位全年共招聘136848人，平均每月招聘人数需求11412人。据数据显示，2017年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计在2018年待遇将再一次水涨船高。",
+            "skillDescription":"系统学习JAVA、JAVA、JAVA、jQuery，HTML5 & CSS3，移动端开发、require.js、es6、sass、webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。",
+            "skillPoint":[
+                {
+                    "skillName":"轮播图特效",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"弹出层",
+                    "skillInt":"网页特效中常使用多张图片轮播"
+                },
+                {
+                    "skillName":"瀑布流",
+                    "skillInt":"广泛应用于电商网站的详细页或商品展示"
+                },
+                {
+                    "skillName":"固定导航",
+                    "skillInt":"网页中常见的导航菜单固定显示在页面的某个部位"
+                },
+                {
+                    "skillName":"楼层导航",
+                    "skillInt":"单击楼层导航时，可滚动至对应的楼层；显示对应楼层时，对应的导航项则发生改变"
+                }
+            ],
+            "planList":[
+                {
+                    "title":"第一阶段",
+                    "info":"HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。"
+
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。"
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。"
+                        }
+                    ],
+                    "isShow":true
+                },
+                {
+                    "title":"第二阶段",
+                    "info":"CSS”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"CSS基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML3.0规范是由当时刚C于19成立的W395年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"CSS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "CSS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"CSS",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第三阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"JS基础",
+                            "introContent":"素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"JS",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"JS",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "JS",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },
+                        {
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第四阶段",
+                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"HTML基础",
+                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"HTML表格",
+                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                        },
+                        {
+                            "classTitle":"第3课",
+                            "introTitle":"HTML表单",
+                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "搭建网页HTML结构",
+                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"课程进阶",
+                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                        }
+                    ],
+                    "isShow":false
+                }
+            ],
+            "commentList":[
+                {
+                    "userName":"nicheng",
+                    "stars":4,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"昵称",
+                    "stars":5,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现在来看看，正好可以巩固自己以前看书漏掉的知识，最有特点的就是课后习题，这一点我个人很喜欢。可能是习惯了吧，习惯听完课有题做的感觉，这样可以迅速的发现哪里自己存在问题，进行查漏补缺，总之课程很棒!",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":true
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                },
+                {
+                    "userName":"aaa",
+                    "stars":3,
+                    "userIcon":"user.png",
+                    "content":"讲的很不错，每小结都有自己独有的知识点，每个章节可以覆盖很多知识点，总体来讲真的很全面,每个章节可以覆盖很多知识点，总体来讲真的很全面。课程也是不错，其实还是有一定基础的，现",
+                    "isShow":false
+                }
+            ]
+        }
+    ]
+}

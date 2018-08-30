@@ -16,7 +16,7 @@
                  <div class="teacher-introduce-container">
                  <span class="teacher-introduce">{{itemProps.classIntroduce}}</span>
                  </div>
-                <div :class="[studyNow,{'background-orange':itemProps.indexObj%5==1},{'background-blue':itemProps.indexObj%5==2},{'background-green':itemProps.indexObj%5==3},{'background-zi':itemProps.indexObj%5==4},{'background-darkorange':itemProps.indexObj%5==0}]"><h4 class="study-now-text" @click="toStudyNow">立即学习</h4></div>
+                <router-link :to="{name:'classdetail',params:{objindex:itemProps.indexObj}}"><div :class="[studyNow,{'background-orange':itemProps.indexObj%5==1},{'background-blue':itemProps.indexObj%5==2},{'background-green':itemProps.indexObj%5==3},{'background-zi':itemProps.indexObj%5==4},{'background-darkorange':itemProps.indexObj%5==0}]"><h4 class="study-now-text" @click="toStudyNow(itemProps.indexObj)">立即学习</h4></div></router-link>
             </div>
         </div>
     </div>
@@ -162,8 +162,8 @@ export default {
             console.log('success classdetail');
             
         },
-        toStudyNow(){
-            console.log('success studynow');
+        toStudyNow(objindex){
+            console.log('success studynow '+objindex);
         }
     }
 }
