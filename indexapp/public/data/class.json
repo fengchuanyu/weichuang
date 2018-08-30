@@ -2,10 +2,10 @@
     "objList":[{
         "indexObj":1,
         "avatarUrl":"logo.png",
-        "teacherName":"董老师",
-        "teacherJob":"JAVA",
+        "teacherName":"谢老师",
+        "teacherJob":"Web全栈课程",
         "teacherDetail":"hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!",
-        "classType":"JAVA",
+        "classType":"Web全栈课程",
         "classTypeDetail":"从零开始的....",
         "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
       },{
