@@ -581,7 +581,6 @@ export default {
   height: 130px;
   overflow: hidden;
   margin: 10px 0;
-  text-indent: 30px;
 }
 .teacher-more {
   color: dodgerblue;

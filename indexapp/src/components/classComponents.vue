@@ -93,12 +93,12 @@ display: -webkit-box;
 -webkit-line-clamp: 6;
 overflow: hidden;
 font-size: 16px;
-text-indent: 25px;
+
 }
 .teacher-introduce{
-font-size: 20px;
+font-size: 16px;
 display: inline-block;
-text-indent: 40px;
+
 }
 .teacher-introduce-container{
 height:180px;
@@ -166,8 +166,8 @@ position: relative;
 .teacher-more{
     position: absolute;
     top: 120px;
-    left: 50px;
     text-align: center;
+    font-size: 16px;
 
 }
 .teacher-more ul{
@@ -182,7 +182,7 @@ position: relative;
 .teacher-more span{
     margin-top: 30px;
     float: left;
-    font-size: 20px;
+    font-size: 16px;
 }
 .teacher-more img{
     margin-left: 35px;
