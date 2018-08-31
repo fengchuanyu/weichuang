@@ -220,7 +220,7 @@ export default {
             
         },
         toStudyNow(objindex){
-            console.log('success studynow '+objindex);
+            console.log('success studynow');
         }
     }
 }

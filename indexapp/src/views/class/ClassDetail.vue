@@ -479,6 +479,7 @@
     border-radius: 10px 10px 0 0;
   }
   .plan-items>div p{
+    width: 100%;
     font-size: 14px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -550,5 +551,4 @@
     height: 20px;
     width: 20px;
   }
-
 </style>
