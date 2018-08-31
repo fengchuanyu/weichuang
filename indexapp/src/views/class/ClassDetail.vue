@@ -37,8 +37,10 @@
       <nav class="classNav">
         <ul>
           <li v-for="(item,index) in classnavList" :key="index+'cnl'" :class="{'active':item.isSelected}" @click="select(item.id)">
+            <a :href="'#'+item.id" class="atitle">
             <span>{{item.title}}</span>
             <div :class="{'bot-line':item.isSelected}"></div>
+            </a>
           </li>
         </ul>
       </nav>
@@ -77,63 +79,65 @@
           </div>
         </div>
     </div>
-
-    <div class="lesson-plan">
-      <h3>课程将如何安排</h3>
-      <div class="lesson-content" v-for="(item,index) in planList" :key="index+'pl'"  v-show="item.isShow">
-        <h4>{{item.title}}</h4>
-        <p>{{item.info}}</p>
-        <div class="plan-items">
-          <div  v-for="(items,cindex) in item.class" :key="cindex+'classl'">
-            <div>{{items.classTitle}}</div>
-            <h4>{{items.introTitle}}</h4>
-            <p>{{items.introContent}}</p>
+    <a name="1">
+      <div class="lesson-plan">
+        <h3>课程将如何安排</h3>
+        <div class="lesson-content" v-for="(item,index) in planList" :key="index+'pl'"  v-show="item.isShow">
+          <h4>{{item.title}}</h4>
+          <p>{{item.info}}</p>
+          <div class="plan-items">
+            <div  v-for="(items,cindex) in item.class" :key="cindex+'classl'">
+              <div>{{items.classTitle}}</div>
+              <h4>{{items.introTitle}}</h4>
+              <p>{{items.introContent}}</p>
+            </div>
           </div>
         </div>
+        <div v-if="planList.length">
+        <div class="show-all" @click="showAll" v-show="!planList[1].isShow">
+          查看全部课程安排
+          <img src="@/assets/img/arrow.png" alt="">
+        </div>
+        <div class="show-all" @click="showAll" v-show="planList[1].isShow">
+          收起
+          <img src="@/assets/img/arrow_up.png" alt="">
+        </div>
+        </div>
       </div>
-      <div v-if="planList.length">
-      <div class="show-all" @click="showAll" v-show="!planList[1].isShow">
-        查看全部课程安排
-        <img src="@/assets/img/arrow.png" alt="">
+    </a>
+    <a name="2">
+      <div class="wrapper">
+        <div class="suitable">
+          <h3>合适人群</h3>
+          <p>知道你对{{classlist.classType}}充满兴趣，你就是最适合的人选</p>
+        </div>
+        <div class="comments">
+          <h3>我在这里只为等待你的到来</h3>
+          <ul class="clearix">
+            <li v-for="(item,index) in commentList" :key="index+'cl'" v-show="item.isShow">
+              <img :src="item.userIcon" alt="">
+              <p>{{item.userName}}</p>
+              <div class="stars">
+                <span v-for="(items,index) in item.stars" :key="index+'star'">
+                  <img src="@/assets/img/star.png" alt="">
+                </span>
+              </div>
+              <p>{{item.content}}</p>
+            </li>
+          </ul>
+        </div>
+        <div v-if="commentList.length">
+        <div class="show-all" @click="showAllComment" v-show="!commentList[4].isShow">
+          查看全部用户评论
+          <img src="@/assets/img/arrow.png" alt="">
+        </div>
+        <div class="show-all" @click="showAllComment" v-show="commentList[4].isShow">
+          收起
+          <img src="@/assets/img/arrow_up.png" alt="">
+        </div> 
+        </div>
       </div>
-      <div class="show-all" @click="showAll" v-show="planList[1].isShow">
-        收起
-        <img src="@/assets/img/arrow_up.png" alt="">
-      </div>
-      </div>
-    </div>
-
-    <div class="wrapper">
-      <div class="suitable">
-        <h3>合适人群</h3>
-        <p>知道你对{{classlist.classType}}充满兴趣，你就是最适合的人选</p>
-      </div>
-      <div class="comments">
-        <h3>我在这里只为等待你的到来</h3>
-        <ul class="clearix">
-          <li v-for="(item,index) in commentList" :key="index+'cl'" v-show="item.isShow">
-            <img :src="item.userIcon" alt="">
-            <p>{{item.userName}}</p>
-            <div class="stars">
-              <span v-for="(items,index) in item.stars" :key="index+'star'">
-                <img src="@/assets/img/star.png" alt="">
-              </span>
-            </div>
-            <p>{{item.content}}</p>
-          </li>
-        </ul>
-      </div>
-      <div v-if="commentList.length">
-      <div class="show-all" @click="showAllComment" v-show="!commentList[4].isShow">
-        查看全部用户评论
-        <img src="@/assets/img/arrow.png" alt="">
-      </div>
-      <div class="show-all" @click="showAllComment" v-show="commentList[4].isShow">
-        收起
-        <img src="@/assets/img/arrow_up.png" alt="">
-      </div> 
-      </div>
-    </div>
+    </a>
 
   </div>
 
@@ -232,6 +236,12 @@
 <style scoped>
   h1{
     font-size: 45px
+  }
+  a{
+    text-decoration:none;
+  }
+  .atitle{
+    color: #0090FF;
   }
   .content{
     width:100%;
