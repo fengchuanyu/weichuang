@@ -290,6 +290,10 @@ export default {
   margin-top: -52px;
   margin-right: 20px;
   color: #6c6c6c;
+
+}
+.more{
+  cursor: pointer;
 }
 .info {
   height: 340px;
@@ -489,6 +493,7 @@ export default {
   transform: translateY(-50%) translateX(-50%);
   height: 40px;
   width: 107px;
+  cursor: pointer;
 }
 .icon-gengduo {
   position: absolute;

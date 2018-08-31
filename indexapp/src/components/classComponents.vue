@@ -17,9 +17,21 @@
                     <span class="teacher-introduce">{{itemProps.classIntroduce}}</span>
                     <div class="teacher-more">
                         <span>参课教师 ：</span>
-                        <img src="../assets/img/user.png" alt="">
-                        <img src="../assets/img/user.png" alt="">
-                        <img src="../assets/img/user.png" alt="">
+                        <ul>
+                            <li>
+                                <img src="../assets/img/user.png" alt="">
+                                <div>吴迎</div>
+                            </li>
+                            <li>
+                                <img src="../assets/img/user.png" alt="">
+                                <div>Shan Luo</div>
+                            </li>
+                            <li>
+                                <img src="../assets/img/user.png" alt="">
+                                <div>William Liu</div>
+                            </li>
+                        </ul>
+                        
                     </div>
                  </div>
                 <router-link :to="{name:'classdetail',params:{objindex:itemProps.indexObj}}"><div :class="[studyNow,{'background-orange':itemProps.indexObj%5==1},{'background-blue':itemProps.indexObj%5==2},{'background-green':itemProps.indexObj%5==3},{'background-zi':itemProps.indexObj%5==4},{'background-darkorange':itemProps.indexObj%5==0}]"><h4 class="study-now-text" @click="toStudyNow(itemProps.indexObj)">立即学习</h4></div></router-link>
@@ -153,10 +165,19 @@ position: relative;
 }
 .teacher-more{
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 50px;
     text-align: center;
 
+}
+.teacher-more ul{
+    float: left;
+}
+.teacher-more li{
+    list-style: none;
+    margin-left: 15px;
+    float: left;
+    text-align: center;
 }
 .teacher-more span{
     margin-top: 30px;
@@ -164,7 +185,7 @@ position: relative;
     font-size: 20px;
 }
 .teacher-more img{
-    margin-left: 18px;
+    margin-left: 35px;
     margin-top: 18px;
     width: 50px;
     height: 50px;
@@ -172,6 +193,10 @@ position: relative;
     background-color: aqua;
     display: inline-block;
     border: 2px solid white;
+    float: left;
+}
+.teacher-more div{
+    margin-left: 30px;
 }
 </style>
 <script>
