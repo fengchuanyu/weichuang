@@ -147,7 +147,7 @@
                             "introContent":"本课程讲解JavaScript的语法、数据类型、基本算数和逻辑运算操作。"
                         },{
                             "classTitle":"第2课",
-                            "introTitle":"JavaScript流程控制语句",
+                            "introTitle":"JavaScript语句",
                             "introContent":"掌握JavaScript中条件分支语句和循环语句的使用，用简洁的代码实现强大功能。"
                         },{
                             "classTitle":"第3课",
@@ -266,6 +266,134 @@
                             "classTitle":"第2课",
                             "introTitle":"requirejs原理",
                             "introContent":"本课程讲解requirejs的原理。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第八阶段",
+                    "info":"本阶段综合讲解ES6的基础知识，包括 ES6的let、const、解构赋值、ES6的新扩展、Promise异步、以及Babel工具，最后综合一个ES6的案例对这些知识进行串联综合运用，达到学以致用。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"ES6基础入门",
+                            "introContent":"本课程，主要介绍了ES6的发展史、作用、优势，以及ES6的let、const，对基础的知识做介绍。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"ES6变量的解构赋值",
+                            "introContent":"本课程，结合小例子，对ES6的解构赋值进行详细的讲解，主要包括数组的解构赋值等。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"ES6扩展",
+                            "introContent":"本课程主要对ES6中的一些新扩展的内容进行了全面的讲解。"
+                        },{
+                            "classTitle":"第4课",
+                            "introTitle":"ES6 Promise",
+                            "introContent":"本课程主要介绍了ES6 Promise的内容， 包括回调与Promise的对比、新人问题、错误处理等。"
+                        }
+                    ],
+                    "isShow":false
+                },
+                {
+                    "title":"第九阶段",
+                    "info":"本阶段带领大家一起来学习Sass的内容，首先会从基础的用法讲解，然后还会有实战的应用，对Sass做一个全面透彻的学习，运用到实处才能真正理解。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"Sass基础",
+                            "introContent":"本课程讲解Sass的变量，运算，函数等，用更少的代码做更多的事情！。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"Sass进阶",
+                            "introContent":"本课程介绍Sass的继承，嵌套等知识。"
+                        }
+                    ],
+                    "isShow":false
+                }
+                ,
+                {
+                    "title":"第十阶段",
+                    "info":"基于Webpack 3.0配合Loader、插件、工具的使用，搭建前端主流的开发环境和项目框架，解决线上代码缓存、体积优化、本地开发环境代理请求等需求，提高开发效率。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"Webpack准备",
+                            "introContent":"讲述模块化开发的思想、学习环境准备，webpack 的概况，版本更迭，核心概念等，为开始实践学习webpack 做准备。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"由浅入深Webpack",
+                            "introContent":"介绍webpack 在处理各种实例的下的配置，实例包括 Typescript Ecmascript Less 语言的预编译，讲解了 Webpack 提取公共代码、代码分割、动态import、魔法注释、JS 和 CSS 的 TreeShaking等新特性。"
+                        }
+                    ],
+                    "isShow":false
+                }
+                ,
+                {
+                    "title":"第十一阶段",
+                    "info":"本阶段主要讲解了Vue的基础知识，以及Vue的实战案例，首先对整个vue的基础知识做一个全面的了解和学习，然后综合实战案例对基础知识进行贯穿和运用。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"vue基础",
+                            "introContent":"本课程，带领大家从vue的作用讲起，通过讲解基础语法，一步步解剖vue，让大家对vue有所掌握。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"vue-cli",
+                            "introContent":"介绍什么是MVC MVVM以及使用vue-cli搭建项目。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"vue-router",
+                            "introContent":"介绍什么是vue-router以及vue-router子路由和参数传递。"
+                        },{
+                            "classTitle":"第4课",
+                            "introTitle":"vuex",
+                            "introContent":"介绍什么是vuex，vuex的相关知识以及vuex的使用。"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"vue原理",
+                            "introContent":"介绍vue的原理，vue的双向数据绑定和diff算法。"
+                        }
+                    ],
+                    "isShow":false
+                }
+                ,
+                {
+                    "title":"第十二阶段",
+                    "info":"初步认识PHP面向对象，运用PHP面向对象的编程思想，实现PHP常规应用操作。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"php基础",
+                            "introContent":"本课程，带领大家学习php的核心语法。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"数据库",
+                            "introContent":"介绍数据库的相关知识。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"CI框架",
+                            "introContent":"介绍php的CI框架。"
+                        }
+                    ],
+                    "isShow":false
+                }
+                ,
+                {
+                    "title":"第十三阶段",
+                    "info":"Node.js 的推出，不仅从工程化的角度自动化掉更多琐碎费时的工作，更打破了前端后端的语言边界，让 JavaScript 流畅的运行在服务器端，本系列教程旨在引导前端开发工程师，以及 Node.js 初学者走进这个活泼而有富有生命力的新世界。",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"nodejs基础",
+                            "introContent":"本课程，带领大家学习node.js安装以及其它nodejs基础知识。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"Node.js原理",
+                            "introContent":"介绍Get、post；路由；Socket io等知识。"
+                        },{
+                            "classTitle":"第3课",
+                            "introTitle":"Node.js Express 框架",
+                            "introContent":"在项目中学习Node.js Express 框架。"
                         }
                     ],
                     "isShow":false
