@@ -8,13 +8,19 @@
                 <div class="teacher-detail-container">
                     <div class="teacher-detail text-white">{{itemProps.teacherDetail}}</div>
                 </div>
-                <div class="more text-white" @click="toDetail">了解讲师→</div>
+                <div class="more text-white" @click="$router.push({name:'about'})">了解讲师→</div>
             </div>
              <div class="right">
                  <h2 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">{{itemProps.classType}}</h2>
                  <h3 :class="[{'text-orange':itemProps.indexObj%5==1},{'text-blue':itemProps.indexObj%5==2},{'text-green':itemProps.indexObj%5==3},{'text-zi':itemProps.indexObj%5==4},{'text-darkorange':itemProps.indexObj%5==0}]">{{itemProps.classTypeDetail}}</h3>
                  <div class="teacher-introduce-container">
-                 <span class="teacher-introduce">{{itemProps.classIntroduce}}</span>
+                    <span class="teacher-introduce">{{itemProps.classIntroduce}}</span>
+                    <div class="teacher-more">
+                        <span>参课教师 ：</span>
+                        <img src="../assets/img/user.png" alt="">
+                        <img src="../assets/img/user.png" alt="">
+                        <img src="../assets/img/user.png" alt="">
+                    </div>
                  </div>
                 <router-link :to="{name:'classdetail',params:{objindex:itemProps.indexObj}}"><div :class="[studyNow,{'background-orange':itemProps.indexObj%5==1},{'background-blue':itemProps.indexObj%5==2},{'background-green':itemProps.indexObj%5==3},{'background-zi':itemProps.indexObj%5==4},{'background-darkorange':itemProps.indexObj%5==0}]"><h4 class="study-now-text" @click="toStudyNow(itemProps.indexObj)">立即学习</h4></div></router-link>
             </div>
@@ -39,7 +45,7 @@ float: left;
 .right{
 margin-left: 272px; 
 padding-left: 27px;   
-width:928px;
+width:899px;
 height:333px;
 background: rgb(240, 240, 240);
 }
@@ -75,13 +81,16 @@ display: -webkit-box;
 -webkit-line-clamp: 6;
 overflow: hidden;
 font-size: 16px;
+text-indent: 25px;
 }
 .teacher-introduce{
 font-size: 20px;
+display: inline-block;
+text-indent: 40px;
 }
 .teacher-introduce-container{
-width:968px;
 height:180px;
+position: relative;
 
 
 }
@@ -95,6 +104,7 @@ height:180px;
     margin-left: 164px;
     margin-top:-17px;
     font-size: 16px;
+    cursor: pointer;
 }
 .study-now{
     margin-left:754px;
@@ -140,6 +150,28 @@ height:180px;
 }
 .text-white{
     color: white;
+}
+.teacher-more{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    text-align: center;
+
+}
+.teacher-more span{
+    margin-top: 30px;
+    float: left;
+    font-size: 20px;
+}
+.teacher-more img{
+    margin-left: 18px;
+    margin-top: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: inline-block;
+    border: 2px solid white;
 }
 </style>
 <script>

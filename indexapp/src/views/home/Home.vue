@@ -141,7 +141,7 @@
                             <div class="teacher-content">
                                 <span>{{items.artist}}</span>
                             </div>
-                            <div class="teacher-more">更多资历→</div>
+                            <span  class="teacher-more" @click="$router.push({name:'about'})">更多资历→</span>
                         </div>
                     </li>
                 </ul>
@@ -576,10 +576,13 @@ export default {
   height: 130px;
   overflow: hidden;
   margin: 10px 0;
+  text-indent: 30px;
 }
 .teacher-more {
   color: dodgerblue;
-  text-align: right;
+   margin-right: 20px;
+  float: right;
+  cursor: pointer;
 }
 /*third结束*/
 

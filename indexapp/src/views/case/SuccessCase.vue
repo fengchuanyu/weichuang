@@ -207,6 +207,7 @@ export default {
     padding: 10px 10px 0 10px;
     box-sizing: border-box;
     letter-spacing: 3px;
+    text-indent: 35px;
   }
   .student-info ul{
     margin-left: 10px;

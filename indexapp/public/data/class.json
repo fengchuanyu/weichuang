@@ -1,67 +1,40 @@
 {
     "objList":[{
         "indexObj":1,
-        "avatarUrl":"logo.png",
+        "avatarUrl":"t003.jpg",
         "teacherName":"谢老师",
         "teacherJob":"Web全栈课程",
-        "teacherDetail":"hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!",
+        "teacherDetail":"曾就职于杭州海康威视数字技术股份有限公司六年有余，担任高级项目经理和金牌内训讲师。个人主导了多个重大项目的开发工作，如江苏省公安厅平安城市项目、绍兴市公安局视频侦查项目、辽阳市公安局视频联网项目等。在Java、NodeJS、JavaScript、HTML5、CSS3、AngularJs、VueJs、ReactJs、前端工程化、前端架构等方面均有建树。",
         "classType":"Web全栈课程",
         "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
+        "classIntroduce":"全栈工程师，是指掌握多种技能，并能利用多种技能独立完成产品的人。这需要一个程序员对前端知识和后端架构都有深入的了解并且有足够的学习能力去学习新的知识，找到更快、更新并且最优的办法来解决问题并且在这一个过程中来提升能力，丰富知识，增加经验。"
       },{
         "indexObj":2,
-        "avatarUrl":"ma2.jpg",
+        "avatarUrl":"t002.jpg",
         "teacherName":"吴老师",
         "teacherJob":"JAVA",
-        "teacherDetail":"hello world!",
+        "teacherDetail":"前美国泰克和IBM工程师，2005年东北林业大学机电学院毕业，硕士，互联网老兵，有10多年互联网开发经验。擅长编程语言：C，C++，PHP，Python 技能：全栈开发、系统架构、运维与运营",
         "classType":"人工智能",
         "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
+        "classIntroduce":"大数据是通过对海量数据的筛选分析，将数据可视化为直观图表，从茫茫数据中发现规律，从而对运营决策提供最有力的建议"
       },{
         "indexObj":3,
-        "avatarUrl":"logo.png",
+        "avatarUrl":"t005.jpg",
         "teacherName":"董老师",
         "teacherJob":"JAVA",
-        "teacherDetail":"hello world!",
+        "teacherDetail":"六年前端开发经验，曾任职聚美优品高级前端工程师，京东商城技术部、服饰家居事业部资深web前端工程师，期间主导了商城的重构以及负责大促首页前端项目，工作中积累了丰富的各种Web开发技术的实战经验。对前端理论知识有深入理解，熟练使用CSS3、 HTML5等技术，深入研究前端es6、 Vue.js、Vuex等新技术及前端框架，掌握丰富的实战编程及教学经验",
         "classType":"WEB",
         "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
+        "classIntroduce":"我们这里所说的前端泛指Web前端，也就是在Web应用中用户可以看得见碰得着的东西。Web前端，顾名思义是来做Web（网页）的前端的。"
       },{
         "indexObj":4,
-        "avatarUrl":"logo.png",
+        "avatarUrl":"t004.jpg",
         "teacherName":"吴老师",
         "teacherJob":"JAVA",
-        "teacherDetail":"hello world!",
+        "teacherDetail":"从事Web全栈开发多年，曾任职于用友集团和海尔集团，掌握各种前后端流行框架和技术。曾担任大型项目主管，在web前端、java、php等技术上都有丰富的开发经验。参与过“NC6.x 供应链-进出口管理 “项目的研发，支持多种操作系统， 多种数据库。为上线产品的做支持维护， 为NC客户提供了几百个需求功能及解决方案，高效完成项目中的问题",
         "classType":"JAVA",
         "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
-      },{
-        "indexObj":5,
-        "avatarUrl":"ma2.jpg",
-        "teacherName":"董老师",
-        "teacherJob":"WEB",
-        "teacherDetail":"hello world!",
-        "classType":"JAVA",
-        "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
-      },{
-        "indexObj":6,
-        "avatarUrl":"logo.png",
-        "teacherName":"张老师",
-        "teacherJob":"JAVA",
-        "teacherDetail":"hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!",
-        "classType":"JAVA",
-        "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
-      },{
-        "indexObj":7,
-        "avatarUrl":"logo.png",
-        "teacherName":"啊老师",
-        "teacherJob":"JAVA",
-        "teacherDetail":"hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!hello world! hello world! hello world! hello world! hello world! hello world! hello world!",
-        "classType":"JAVA",
-        "classTypeDetail":"从零开始的....",
-        "classIntroduce":"avatar avatar avatar avatar avatar avatar avatar v  avatar avatar avatar avatar v vavatar"
+        "classIntroduce":"网页上的数据存在哪里？A P I又是什么？就像一间没有造好的屋子，光有室内装饰还是远远不够的。于是我们还需要后端工程师。网页的后端包括服务器，应用程序，以及数据库。这些部分相互作用，使用 API和前端通信，确保了网页前端的数据以及前后端的交互。"
       }
      ]
   }

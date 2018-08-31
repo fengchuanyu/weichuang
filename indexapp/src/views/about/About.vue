@@ -212,9 +212,11 @@ export default {
   padding: 10px;
   height:92px;
   overflow: hidden;
+  text-indent: 25px;
 }
 .content .more {
   padding-top: 30px;
+  margin-right: 20px;
   float: right;
   color: #529de3;
 }

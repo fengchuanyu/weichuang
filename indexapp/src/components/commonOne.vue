@@ -7,30 +7,33 @@
                 </ul>
             </div>
             <div v-for="(items,index) in dataLists" :key='index+"al"' class="head-two">
+
                 <div class="head-two-one">
                     {{items.year}}
                     <div></div>
                 </div>
                 <div class="nav-two">
-                    <ul v-for="(item,index) in items.src" :key='index+"bl"'>
+                    <ul v-for="(item,index) in items.src" :key='index+"bl"' class="">
                         <li>{{item.name}}</li>
                         <li>{{item.school}}</li>
                         <li>{{item.company}}</li>
                     </ul>
                 </div>
             </div>
-            <div class="container-three" v-show="isshow">
+            <!-- <div class="container-three" v-show="isshow">
                 <div @click="btnone" class="btn-two">
                     <div class="btn-one btn-three">&lt;</div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="container-two" v-if="isifs">
             <div v-for="(items,index) in dataLists" :key='index+"cl"' class="head-two">
+               
                 <div class="head-two-one">
                     {{items.year}}
                     <div></div>
                 </div>
+            
                 <div  class="nav-two nav-two-one">
                     <div class="nav-two-title">
                         {{items.titles[0]}}
@@ -134,7 +137,6 @@
         width: 100% ;
         height: 599px;
         margin: auto;
-        padding-left: 80px;
         padding-top: 30px;
         position: relative;
         overflow-y: scroll;
@@ -145,15 +147,25 @@
         margin-bottom: 30px;
         font-size: 30px;
         margin-left: 240px;
+        
+    }
+    .head-two{
+        width: 100%
+    }
+    .head-one ul{
+        display: flex;
     }
     .head-one li{
-        margin: 0 60px 0 90px;
+        text-align: center;
+        flex: 1;
     }
     .head-two-one{
         color: #008ffd;
         position: absolute;
         font-weight: bolder;
         font-size: 26px;
+        width: 25%;
+        text-align: center
     }
     .head-two-one div{
         height: 18px;
@@ -167,19 +179,24 @@
         z-index: 1;
     }
     .nav-two{
-        position: relative;
-        left: 221px;
+        margin-left: 240px;
+        text-align: center;
         top: 0px;
-        border-left: 1px solid #dddddd;
+        
         color: #313131;
         font-size: 22px;
-        text-align: left;
+        
     }
     .nav-two-one{
         padding-left: 100px;
+        
+    }
+    .nav-two ul{
+        display: flex
     }
     .nav-two li{
-        padding: 0px 85px 6px 145px;
+        flex: 1 ;
+        text-align: center;
     }
     .nav-two-title, .nav-two-src{
         padding: 0px 3px 10px 3px;
@@ -208,5 +225,8 @@
     .container-three{
         width: 80px;
         margin: 0 auto;
+    }
+    .head-two-left{
+        width: 30%
     }
 </style>
