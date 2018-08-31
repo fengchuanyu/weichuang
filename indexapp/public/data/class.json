@@ -19,17 +19,17 @@
         "classIntroduce":"大数据是通过对海量数据的筛选分析，将数据可视化为直观图表，从茫茫数据中发现规律，从而对运营决策提供最有力的建议"
       },{
         "indexObj":3,
-        "avatarUrl":"t001.jpg",
-        "teacherName":"单老师",
+        "avatarUrl":"t006.jpg",
+        "teacherName":"冯老师",
         "teacherJob":"产品经理",
-        "teacherDetail":"2003年毕业，从事程序开发15年，骨灰级程序员，高级讲师，培养过大量优秀开发人才，主要从事Web程序开发和移动App开发。掌握技术：在Web前端方向有非常深的造诣，是国内最早从事前端开发的一批工程师；几乎所有Java方向涉及的相关技术，包括各种主流框架（SSH、SSI等），熟悉各种应用服务器（Weblogic、JBoss、Tomcat等）；熟悉各种数据库（Oracle、SQLServer、MySQL、MongoDB等）；熟悉Linux系统；熟悉PHP开发；熟悉Node.js开发。",
+        "teacherDetail":"2012年七月毕业于哈尔滨理工大学，2016-8至2018-4滴滴出行，入职公司隶属质量部-用户行为分析平台，负责平台数据图形化处理，主要用框架与技术 bootsrap、 echarts、 juqery、 Html5、 css3、Vue.js等 ，技术评级 D5。   （顶级D8）",
         "classType":"产品经理",
         "classTypeDetail":"从零开始的....",
         "classIntroduce":"产品经理，是企业中专门负责产品管理的职位，产品经理负责市场调查并根据用户的需求，确定开发何种产品，选择何种技术、商业模式等。并推动相应产品的开发组织，他还要根据产品的生命周期，协调研发、营销、运营等，确定和组织实施相应的产品策略，以及其他一系列相关的产品管理活动。"
       },{
         "indexObj":4,
-        "avatarUrl":"t006.jpg",
-        "teacherName":"冯老师",
+        "avatarUrl":"t007.jpg",
+        "teacherName":"吴老师",
         "teacherJob":"UI",
         "teacherDetail":"2012年七月毕业于哈尔滨理工大学，2016-8至2018-4滴滴出行，入职公司隶属质量部-用户行为分析平台，负责平台数据图形化处理，主要用框架与技术 bootsrap、 echarts、 juqery、 Html5、 css3、Vue.js等 ，技术评级 D5。   （顶级D8）",
         "classType":"UI",

@@ -9,7 +9,7 @@
           </div>
           <div class="back-btns">
             <button class="preLesson">免费试听</button>
-            <button class="lessonSechedule">查看课表</button>
+            <button class="lessonSechedule"><a href="#1" class="atitle">查看课表</a></button>
           </div>
           <div class="count-down">
             <p>距离下次开课还有</p>
@@ -19,22 +19,22 @@
         <div class="front">
           <div>
             <p>课程时长</p>
-            <p>6个月</p>
-            <p>每周2天，每天8小时</p>
+            <p>{{classlist.timeLength}}</p>
+            <p>{{classlist.timeDetails}}</p>
           </div>
           <div>
-            <p>课程时长</p>
-            <p>6个月</p>
-            <p>每周2天，每天8小时</p>
+            <p>下次开课</p>
+            <p>{{classlist.nextTime}}</p>
+            <p>第一节为免费试听课</p>
           </div>
           <div>
-            <p>课程时长</p>
-            <p>6个月</p>
-            <p>每周2天，每天8小时</p>
+            <p>授课讲师</p>
+            <p>{{classlist.Mteacher}}</p>
+            <p>唯创高级讲师</p>
           </div>
         </div>
       </div>
-      <nav class="classNav">
+      <!-- <nav class="classNav">
         <ul>
           <li v-for="(item,index) in classnavList" :key="index+'cnl'" :class="{'active':item.isSelected}" @click="select(item.id)">
             <a :href="'#'+item.id" class="atitle">
@@ -43,7 +43,7 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
     <div class="class-intro">
       <span>{{classlist.classIntTitle}}</span>
@@ -143,6 +143,7 @@
 
 </template>
 <script>
+    import axios from "axios";
     export default {
         data(){
             return{
@@ -240,9 +241,6 @@
   a{
     text-decoration:none;
   }
-  .atitle{
-    color: #0090FF;
-  }
   .content{
     width:100%;
     overflow: hidden;
@@ -316,6 +314,12 @@
   .preLesson:hover,.lessonSechedule:hover{
     color:#0090ff;
     background: #fff;
+  }
+  .lessonSechedule .atitle{
+    color:#fff;
+  }
+  .lessonSechedule:hover .atitle{
+    color:#0090ff;
   }
   .classNav ul{
     
@@ -454,8 +458,15 @@
     text-align: left;
     line-height: 30px;
   }
+  .lesson-content{
+    text-align: center;
+  }
   .plan-items{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    display: inline-block;
     margin: 20px 0 40px 0;
   }
   .plan-items p{
@@ -464,11 +475,11 @@
   }
 
   .plan-items>div{
-    width:120px;
+    width:220px;
     height:150px;
-    flex:1;
     background: #fff;
     margin:10px;
+    float: left;
     border-radius: 10px;
   }
   .plan-items>div>div{

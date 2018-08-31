@@ -49,6 +49,10 @@
     ],
     "classTypes":[
         {
+            "timeLength":"6个月",
+            "timeDetails":"每周2天课，每天8小时",
+            "nextTime":"2018年9月1日 9:00",
+            "Mteacher":"谢老师",
             "classType":"Web全栈课程",
             "classIntTitle":"清风十里，不如认识你——\"Web全栈\"",
             "classIntroduce":"全栈工程师，是指掌握多种技能，并能利用多种技能独立完成产品的人。这需要一个程序员对前端知识和后端架构都有深入的了解并且有足够的学习能力去学习新的知识，找到更快、更新并且最优的办法来解决问题并且在这一个过程中来提升能力，丰富知识，增加经验。",
@@ -445,18 +449,22 @@
             ]
         },
         {
-            "classType":"大数据",
+            "timeLength":"6个月",
+            "timeDetails":"每周2天课，每天8小时",
+            "nextTime":"2018年9月1日 9:00",
+            "Mteacher":"吴老师",
+            "classType":"JAVA大数据",
             "classIntTitle":"清风十里，不如认识你——\"大数据\"",
             "classIntroduce":"大数据是通过对海量数据的筛选分析，将数据可视化为直观图表，从茫茫数据中发现规律，从而对运营决策提供最有力的建议。",
-            "skillDescription":"系统学习人工智能、人工智能、人工智能、java，HTML5 & CSS3，移动端开发、require.js、es6、sass、webpack、vue、php、node，你将有能力独立开发应用这些功能的项目。",
+            "skillDescription":"Java是一门经久不衰的编程语言，无论你想要从事Java开发还是Android开发，亦或是找一个语言作为基础入门。那么此路径就是你的不二选择，现在比别人学的更早，未来就比别人成长更快。",
             "skillPoint":[
                 {
-                    "skillName":"轮播图特效",
-                    "skillInt":"网页特效中常使用多张图片轮播"
+                    "skillName":"Java基础知识",
+                    "skillInt":"基础语法、循环、数组、方法，这些知识是你进入研发世界的必备技能"
                 },
                 {
-                    "skillName":"弹出层",
-                    "skillInt":"网页特效中常使用多张图片轮播"
+                    "skillName":"面向对象",
+                    "skillInt":"继承、封装、多态、玩转面向对象，你一定听说过“面向对象”，这是理解编程这件事最重要的一个概念"
                 },
                 {
                     "skillName":"瀑布流",
@@ -474,115 +482,182 @@
             "planList":[
                 {
                     "title":"第一阶段",
-                    "info":"HTML主要是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言，为搭建网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。",
+                    "info":"本步骤涵盖Java程序结构、开发环境搭建、常量与变量、运算符、流程控制、数组和方法等Java基础语法的内容。通过本步骤学习，可以掌握Java程序的执行流程，能够编写符合Java语法规则的程序。",
                     "class":[
                         {
                             "classTitle":"第1课",
-                            "introTitle":"HTML基础",
-                            "introContent":"HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签。"
+                            "introTitle":"JJava初识",
+                            "introContent":"对Java进行简单介绍，Java程序如何执行，以及Java程序的结构。"
 
                         },{
                             "classTitle":"第2课",
-                            "introTitle":"HTML表格",
-                            "introContent":"表格在网页中用于数据和排版本课程介绍表格概念、语法、操作，并通过案例掌握知识。"
+                            "introTitle":"Java常量与变量",
+                            "introContent":"Java的基本概念，包括标识符、关键字、数据类型、字面值、变量和常量等。"
                         },{
                             "classTitle":"第3课",
-                            "introTitle":"HTML表单",
-                            "introContent":"表单用于收集用户信息，本课程介绍表单概念、语法及创建表单,并通过案例掌握知识。"
+                            "introTitle":"Java运算符",
+                            "introContent":"算术、赋值、逻辑和条件等常用运算符，以及简单的条件结构if和if-else。"
                         },{
                             "classTitle": "第4课",
-                            "introTitle": "搭建网页HTML结构",
-                            "introContent": "本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。"
+                            "introTitle": "Java流程控制",
+                            "introContent": "进一步学习选择结构，判断分支语句, 循环语句,多重循环。"
                         },{
                             "classTitle":"第5课",
-                            "introTitle":"课程进阶",
-                            "introContent":"本课程介绍什么是元数据，以及如何使用CSS样式，并通过案例掌握知识。"
+                            "introTitle":"Java方法",
+                            "introContent":"本课程介绍方法的定义和返回值。"
+                        },{
+                            "classTitle":"第6课",
+                            "introTitle":"Java数组",
+                            "introContent":"本课程介绍数组的定义和内存分析,数据遍历，多维数组,数组排序算法,Array的工具类。"
+                        },{
+                            "classTitle":"第7课",
+                            "introTitle":"实践案例1",
+                            "introContent":"本课程结合前面知识做实践案例。"
                         }
                     ],
                     "isShow":true
                 },
                 {
                     "title":"第二阶段",
-                    "info":"CSS”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "info":"在本步骤中，我们将带你逐步认识如何通过Java语言实现面向对象的三大特征继承、封装、多态，并编写具有面向对象思想的Java程序。",
                     "class":[
                         {
                             "classTitle":"第1课",
-                            "introTitle":"CSS基础",
-                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                            "introTitle":"Java面向对象",
+                            "introContent":"认识Java中的面向对象的思想，掌握面向对象的基本原则以及基本实现原理，定义类和属性方法。"
                         },{
                             "classTitle":"第2课",
-                            "introTitle":"CSS",
-                            "introContent":"HTML3.0规范是由当时刚C于19成立的W395年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                            "introTitle":"Java封装",
+                            "introContent":"着重介绍什么是封装，以及如何在Java中实现封装，局部变量。"
                         },{
                             "classTitle":"第3课",
-                            "introTitle":"CSS",
-                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                            "introTitle":"Java继承和方法",
+                            "introContent":"着重介绍继承的特点，static静态方法，构造方法以及继承，方法重写。"
                         },{
                             "classTitle": "第4课",
-                            "introTitle": "CSS",
-                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                            "introTitle": "Java传递",
+                            "introContent": "介绍this关键字，值传递和引用传递。"
                         },{
                             "classTitle":"第5课",
-                            "introTitle":"CSS",
-                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                            "introTitle":"单例设计模式",
+                            "introContent":"着重介绍单例模式的特点。"
                         }
                     ],
                     "isShow":false
                 },
                 {
                     "title":"第三阶段",
-                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "info":"在本步骤中，将会介绍最常用的Java工具类，包括异常、Object类、treeMap、集合、网络编程、线程和进程,super关键字,MySQL等内容。",
                     "class":[
                         {
                             "classTitle":"第1课",
-                            "introTitle":"JS基础",
-                            "introContent":"素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                            "introTitle":"super关键字",
+                            "introContent":"介绍继承案例应用、final关键字；抽象类、接口的概念，接口应用策略模式实践。"
                         },{
                             "classTitle":"第2课",
-                            "introTitle":"JS",
-                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                            "introTitle":"Object类",
+                            "introContent":"简单工厂模式，适配器模式，静态代理模式和递归算法实例。"
                         },{
                             "classTitle":"第3课",
-                            "introTitle":"JS",
-                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                            "introTitle":"异常",
+                            "introContent":"掌握什么是异常处理机制以及如何实现Java中的异常处理。"
                         },{
                             "classTitle": "第4课",
-                            "introTitle": "JS",
-                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                            "introTitle": "集合与treeMap",
+                            "introContent": "介绍arrayList、hashset、Map和HashMap集合的特点、泛型和集合迭代的使用。"
                         },
                         {
                             "classTitle":"第5课",
-                            "introTitle":"课程进阶",
-                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                            "introTitle":"线程和进程",
+                            "introContent":"能够进行多线程程序的编写，并掌握生命周期、同步和线程间通信等内容。"
+                        },
+                        {
+                            "classTitle":"第6课",
+                            "introTitle":"MySQL",
+                            "introContent":"介绍JDBC操作、迭代器设计模式、批量操作，事务，存储过程等。"
                         }
                     ],
                     "isShow":false
                 },
                 {
                     "title":"第四阶段",
-                    "info":"HTML超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body），其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。",
+                    "info":"出于安全性的考虑，大多数网站采用Java语言进行开发，尤其在大型电商平台、金融领域。可见Java web发展前景非常可观，学好Java Web，高薪职位等你来拿！",
                     "class":[
                         {
                             "classTitle":"第1课",
-                            "introTitle":"HTML基础",
-                            "introContent":"HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。"
+                            "introTitle":"Html&css",
+                            "introContent":"本堂课主要讲解html语法，常用标签，块级元素，行内元素，及表格表单等；讲解什么是css，css内外联样式、子元素的选择以盒子模型的设置等。"
                         },{
                             "classTitle":"第2课",
-                            "introTitle":"HTML表格",
-                            "introContent":"HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。"
+                            "introTitle":"JavaScript",
+                            "introContent":"课程主要讲解了JavaScript中的变量，数据类型，函数、DOM操作以及window对象等。"
                         },
                         {
                             "classTitle":"第3课",
-                            "introTitle":"HTML表单",
-                            "introContent":"HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准."
+                            "introTitle":"Jquery",
+                            "introContent":"课程主要讲解Jquery的相关知识,Jquery选择器、事件、Dom操作和动画等。"
                         },{
                             "classTitle": "第4课",
-                            "introTitle": "搭建网页HTML结构",
-                            "introContent": "HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出"
+                            "introTitle": "Tomcat服务器",
+                            "introContent": "课程讲解Tomcat服务器搭建，服务器端口配置以及Tomcat启动&停止"
                         },{
                             "classTitle":"第5课",
-                            "introTitle":"课程进阶",
-                            "introContent":"XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。"
+                            "introTitle":"Spring框架",
+                            "introContent":"介绍Spring框架相关知识。"
+                        },{
+                            "classTitle":"第6课",
+                            "introTitle":"MyBatis",
+                            "introContent":"介绍MyBatis配置&查询数据，全局配置文件，缓存机制等。"
+                        },{
+                            "classTitle":"第7课",
+                            "introTitle":"案例项目",
+                            "introContent":"在案例中掌握知识。"
+                        }
+                    ],
+                    "isShow":false
+                }
+                ,
+                {
+                    "title":"第五阶段",
+                    "info":"大数据实战",
+                    "class":[
+                        {
+                            "classTitle":"第1课",
+                            "introTitle":"Linux命令",
+                            "introContent":"本堂课主要讲解文件夹结构和系统管理，目录权限，shell。"
+                        },{
+                            "classTitle":"第2课",
+                            "introTitle":"Hadoop概述",
+                            "introContent":"课程主要讲解分布式文件系统HDFS和Yarn、并行计算框架MapReduce等。"
+                        },
+                        {
+                            "classTitle":"第3课",
+                            "introTitle":"Hive概述分析",
+                            "introContent":"课程主要讲解Hive安装部署、常见属性配置和常用交互、高阶查询等。"
+                        },{
+                            "classTitle": "第4课",
+                            "introTitle": "Hbase介绍",
+                            "introContent": "课程讲解Hbase shell的基本使用，数据存储和检索，数据迁移等"
+                        },{
+                            "classTitle":"第5课",
+                            "introTitle":"Storm简介",
+                            "introContent":"介绍Strom集群搭建和测试，API使用和入门开发，Trident实战等。"
+                        },{
+                            "classTitle":"第6课",
+                            "introTitle":"scala介绍 ",
+                            "introContent":"介绍scala基础语法，map的转换，Scala actor的消息处理等。"
+                        },{
+                            "classTitle":"第7课",
+                            "introTitle":"Spark ",
+                            "introContent":"介绍Spark与MapReduce对比，Spark内核解析，Spark RDD特性等。"
+                        },{
+                            "classTitle":"第8课",
+                            "introTitle":"Python概述",
+                            "introContent":"介绍Python基础语法，基于Python的Web开发，scrapy框架开发爬虫项目等。"
+                        },{
+                            "classTitle":"第9课",
+                            "introTitle":"实战项目 ",
+                            "introContent":"制作驴妈妈和电信项目。"
                         }
                     ],
                     "isShow":false
@@ -634,6 +709,10 @@
             ]
         },
         {
+            "timeLength":"6个月",
+            "timeDetails":"每周2天课，每天8小时",
+            "nextTime":"2018年9月1日 9:00",
+            "Mteacher":"冯老师",
             "classType":"产品经理",
             "classIntTitle":"清风十里，不如认识你——\"产品\"",
             "classIntroduce":"产品经理，是企业中专门负责产品管理的职位，产品经理负责市场调查并根据用户的需求，确定开发何种产品，选择何种技术、商业模式等。并推动相应产品的开发组织，他还要根据产品的生命周期，协调研发、营销、运营等，确定和组织实施相应的产品策略，以及其他一系列相关的产品管理活动。",
@@ -823,6 +902,10 @@
             ]
         },
         {
+            "timeLength":"6个月",
+            "timeDetails":"每周2天课，每天8小时",
+            "nextTime":"2018年9月1日 9:00",
+            "Mteacher":"吴老师",
             "classType":"UI设师",
             "classIntTitle":"清风十里，不如认识你——\"UI\"",
             "classIntroduce":"“UI”的本义是用户界面，是英文User和interface的缩写。UI设计师简称UID（User Interface Designer），指从事对软件的人机交互、操作逻辑、界面美观的整体设计工作的人。",
